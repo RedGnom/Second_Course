@@ -22,6 +22,15 @@ namespace LAB5
                 case 2:
                     Console.WriteLine("Введите элемент");
                     break;
+                case 3:
+                    Console.WriteLine("Выберите действие");
+                    break;
+                case 4:
+                    Console.WriteLine("Введите номер строки, с которой вставлять");
+                    break;
+                case 5:
+                    Console.WriteLine("Введите количество столбцов");
+                    break;
                 default:
                     Console.WriteLine("Выберите действие");
                     break;
@@ -40,78 +49,71 @@ namespace LAB5
             while (!isCorrect);
             return n;
         }
-        static void FillArr(int[] arr, int choice)
+        static void FillArr(int[] arr)
         {
-            if (choice == 0)
+            for (int i = 0; i < arr.Length; i++)
             {
-                for (int i = 0; i < arr.Length; i++)
-                {
 
-                    arr[i] = ReadElem(out arr[i], 2);
-                }
+                arr[i] = ReadElem(out arr[i], 2);
             }
-            else {
-                for (int i = 0; i < arr.Length; i++)
-                {
-                    arr[i] = rnd.Next(0, 50);
-                }
-            }
-            
         }
-        static void FillArr(int[,] arr, int choice)
+        static void FillArrRnd(int[] arr)
         {
-            if (choice == 0)
+            for (int i = 0; i < arr.Length; i++)
             {
-                for (int i = 0; i < arr.GetLength(0); i++)
-                {
-                    for (int j = 0; j < arr.GetLength(1); j++)
-                    {
-                        arr[i, j] = ReadElem(out arr[i,j], 2);
-                    }
-                }
+                arr[i] = rnd.Next(0, 50);
             }
-            else
+        }
+        static void FillArr(int[,] arr)
+        {
+            for (int i = 0; i < arr.GetLength(0); i++)
             {
-                for (int i = 0; i < arr.GetLength(0); i++)
+                for (int j = 0; j < arr.GetLength(1); j++)
                 {
-                    for (int j = 0; j < arr.GetLength(1); j++)
-                    {
-                        arr[i, j] = rnd.Next(0, 50);
-                    }
+                    arr[i, j] = ReadElem(out arr[i, j], 2);
                 }
             }
         }
-        static int[][] FillArr(int m, int choice)
+        static void FillArrRnd(int[,] arr)
+        {
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    arr[i, j] = rnd.Next(0, 50);
+                }
+            }
+        }
+        static int[][] FillArr(int[][] arr)
         {
             int n;
-            int[][] arr = new int[m][];
-            if (choice == 0)
+
+            for (int i = 0; i < arr.Length; i++)
             {
-                for (int i = 0; i < m; i++)
+                Console.WriteLine("Строка номер: " + (i + 1));
+                ReadElem(out n, 0);
+                arr[i] = new int[n];
+                for (int j = 0; j < n; j++)
                 {
-                    Console.WriteLine("Строка номер: " + i + 1);
-                    ReadElem(out n, 0);
-                    arr[i] = new int[n];
-                    for (int j = 0; j < n; j++)
-                    {
-                        arr[i][j] = ReadElem(out arr[i][j], 2);
-                    }
+                    arr[i][j] = ReadElem(out arr[i][j], 2);
                 }
             }
-            else
+            return arr;
+        }
+        static int[][] FillArrRnd(int [][] arr)
+        {
+            int n;
+
+            for (int i = 0; i < arr.Length; i++)
             {
-                for (int i = 0; i < m; i++)
+                Console.WriteLine("Строка номер: " + (i + 1));
+                ReadElem(out n, 0);
+                arr[i] = new int[n];
+                for (int j = 0; j < n; j++)
                 {
-                    Console.WriteLine("Строка номер: " + (i + 1));
-                    ReadElem(out n, 0);
-                    arr[i] = new int[n];
-                    for (int j = 0; j < n; j++)
-                    {
-                        arr[i][j] = rnd.Next(0, 50);
-                    }
+                    arr[i][j] = rnd.Next(0, 50);
                 }
             }
-            
             return arr;
         }
         static void ShowArr(int[] arr)
@@ -195,14 +197,16 @@ namespace LAB5
         static void AddString(ref int[,] arr)
         {
             int k, n;
-            ReadElem(out k, out n, 1);
+            ReadElem(out k, 1);
+            ReadElem(out n, 4);
             bool IsCheck = false;
             while (!IsCheck)
             {
                 if (n > arr.GetLength(0))
                 {
                     Console.WriteLine("Номер больше количества строк в массиве");
-                    ReadElem(out k, out n, 1);
+                    ReadElem(out k, 1);
+                    ReadElem(out n, 4);
                 }
                 else
                 {
@@ -250,80 +254,45 @@ namespace LAB5
             arr = tempArr;
             m += k;
         }
-        static int ReadElem(out int n, out int m, int choice)
+        static void ProcessArray<T>(T arr, int choiceForFill)
         {
-            if (choice == 0)
+            Console.WriteLine("Выберите тип ввода данных: 1 - вручную, 2 - автоматически");
+            choiceForFill = ReadElem(out choiceForFill, 3);
+            switch (choiceForFill)
             {
-                Console.WriteLine("Введите количество столбцов");
+                case 1:
+                    FillArr((dynamic)arr);
+                    break;
+                case 2:
+                    FillArrRnd((dynamic)arr);
+                    break;
+                default:
+                    break;
             }
-            else
-            {
-                Console.WriteLine("Введите количество строк");
-            }
+            ShowArr((dynamic)arr);
 
-            bool isCorrect;
-            do
-            {
-                isCorrect = int.TryParse(Console.ReadLine(), out n);
-                if (!isCorrect || n < 0)
-                {
-                    Console.WriteLine("Неверные данные, повторите попытку ввода");
-                }
-            } while (!isCorrect || n < 0);
-
-            if (choice == 0)
-            {
-                Console.WriteLine("Введите количество строк");
-            }
-            else
-            {
-                Console.WriteLine("Введите номер строки, с которой вставлять");
-            }
-
-            do
-            {
-                isCorrect = int.TryParse(Console.ReadLine(), out m);
-                if (!isCorrect || m < 0)
-                {
-                    Console.WriteLine("Неверные данные, повторите попытку ввода");
-                }
-            } while (!isCorrect || m < 0);
-
-            return n;
         }
         static void Switch()
         {
             int m, n, choice;
 
             bool isFinal = false;
-
+            int choiceForFill = 0;
             while (!isFinal)
             {
                 Console.WriteLine("1 - Динамический массив, 2 - Двумерный динамический массив, 3 - Рваный массив, 4 - Выход");
                 ReadElem(out choice, 3);
-
+                choiceForFill = 0;
                 switch (choice)
                 {
                     case 1:
                         ReadElem(out n, 0);
                         int[] arr = new int[n];
-                        Console.WriteLine("Выберите тип ввода данных: 1 - вручную, 2 - автоматически");
-                        int choiceForFill = ReadElem(out choiceForFill, 3);
-                        switch (choiceForFill)
-                        {
-                            case 1:
-                                FillArr(arr, 0);
-                                break;
-                            case 2:
-                                FillArr(arr, 1);
-                                break;
-                            default:
-                                break;
-                        }
-                        ShowArr(arr);
+                        ProcessArray<int[]>(arr, choiceForFill);
                         DeleteEven(ref arr);
                         Console.WriteLine("Произошло удаление четных");
                         ShowArr(arr);
+
                         bool continueWork = true;
                         while (continueWork)
                         {
@@ -342,22 +311,10 @@ namespace LAB5
                         }
                         break;
                     case 2:
-                        ReadElem(out n, out m, 0);
+                        ReadElem(out n, 5);
+                        ReadElem(out m, 1);
                         int[,] arr2 = new int[m, n];
-                        Console.WriteLine("Выберите тип ввода данных: 1 - вручную, 2 - автоматически");
-                        choiceForFill = ReadElem(out choiceForFill, 3);
-                        switch (choiceForFill)
-                        {
-                            case 1:
-                                FillArr(arr2, 0);
-                                break;
-                            case 2:
-                                FillArr(arr2, 1);
-                                break;
-                            default:
-                                break;
-                        }
-                        ShowArr(arr2);
+                        ProcessArray<int[,]>(arr2, choiceForFill);
                         AddString(ref arr2);
                         ShowArr(arr2);
                         continueWork = true;
@@ -379,21 +336,8 @@ namespace LAB5
                         break;
                     case 3:
                         ReadElem(out m, 1);
-                        Console.WriteLine("Выберите тип ввода данных: 1 - вручную, 2 - автоматически");
-                        choiceForFill = ReadElem(out choiceForFill, 3);
-                        int[][] arr3 = new int [0][];
-                        switch (choiceForFill)
-                        {
-                            case 1:
-                                arr3 = FillArr(m, 0);
-                                break;
-                            case 2:
-                                arr3 = FillArr(m, 1);
-                                break;
-                            default:
-                                break;
-                        }
-                        ShowArr(arr3);
+                        int[][] arr3 = new int[m][];
+                        ProcessArray<int[][]>(arr3, choiceForFill);
                         AddString(ref arr3, ref m);
                         ShowArr(arr3);
                         continueWork = true;

@@ -5,3 +5,10 @@ A:\projects\LAB5\LAB5\obj\Debug\LAB5.csproj.AssemblyReference.cache
 A:\projects\LAB5\LAB5\obj\Debug\LAB5.csproj.CoreCompileInputs.cache
 A:\projects\LAB5\LAB5\obj\Debug\LAB5.exe
 A:\projects\LAB5\LAB5\obj\Debug\LAB5.pdb
+A:\C#\LAB5\LAB5\bin\Debug\LAB5.exe.config
+A:\C#\LAB5\LAB5\bin\Debug\LAB5.exe
+A:\C#\LAB5\LAB5\bin\Debug\LAB5.pdb
+A:\C#\LAB5\LAB5\obj\Debug\LAB5.csproj.AssemblyReference.cache
+A:\C#\LAB5\LAB5\obj\Debug\LAB5.csproj.CoreCompileInputs.cache
+A:\C#\LAB5\LAB5\obj\Debug\LAB5.exe
+A:\C#\LAB5\LAB5\obj\Debug\LAB5.pdb
