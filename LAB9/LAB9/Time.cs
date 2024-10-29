@@ -14,49 +14,57 @@ namespace LAB9
 
         public int Hours
         {
-            get { return hours; }
+            get { return hours;}
             set {
-                if (int.TryParse(Console.ReadLine(), out value) || value >0)
-                {
-                    hours = value;
-                }
-                else {
-                    throw new ArgumentException("Количество часов меньше 0 или некорректный ввод");
-                }
+                hours = value;
             }
         }
         public int Minutes
         {
-            get { return minutes; }
+            get {return minutes; }
             set
             {
-                if (int.TryParse(Console.ReadLine(), out value) || value > 0)
-                {
-                    minutes = value;
-                }
-                else
-                {
-                    throw new ArgumentException("Количество минут меньше 0 или некорректный ввод");
-                }
+                minutes = value;
             }
         }
         public Time()
         {
             Hours = 0;
             Minutes = 0;
-
         }
         public Time(int hours, int minutes) {
-            Minutes = minutes;
-            if (Minutes > 59)
+            if (minutes > 59)
             {
-                Hours = hours+1;
-                Minutes = -60;
+                Hours = (hours)+1;
+                Minutes = (minutes) - 60;
             }
             else
             {
                 Hours = hours;
+                Minutes = minutes;
             }
+            counts++;
+        }
+        public int GetAmount()
+        {
+            return counts;
+        }
+        public Time minus(Time other) {
+            int total_minutes = (Minutes+(Hours*60))-(other.Minutes+(other.Hours*60));
+            if (total_minutes > 0)
+            {
+                Hours = total_minutes / 60;
+                Minutes = total_minutes % 60;
+                return this;
+            }
+            else
+            {
+                Hours = 0;
+                Minutes = 0;
+                return this;
+            }
+
+
         }
     }
 }

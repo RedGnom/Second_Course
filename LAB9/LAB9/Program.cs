@@ -10,8 +10,14 @@ namespace LAB9
     {
         static void Main(string[] args)
         {
-
-
+            Time time = new Time();
+            Interface.Read(out time);
+            Interface.Write(time);
+            Time time2 = new Time();
+            Interface.Read(out time2);
+            Interface.Write(time2);
+            time2.minus(time);
+            Interface.Write(time2);
 
 
         }
