@@ -30,6 +30,7 @@ namespace LAB9
             Console.WriteLine("Введите количество часов: ");
             int hours = Read();
             time = new Time(hours, minutes);
+            Time.DecreaseAmount();
         }
         public static void Write(Time time) {
             Console.WriteLine("Количество часов: "+time.Hours+ "  Количество минут: " + time.Minutes);

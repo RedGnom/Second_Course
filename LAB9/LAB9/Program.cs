@@ -12,6 +12,7 @@ namespace LAB9
         {
             int total_minutes = (timeOne.Minutes + (timeOne.Hours * 60)) - (timeTwo.Minutes + (timeTwo.Hours * 60));
             Time time = new Time();
+            Time.DecreaseAmount();
             if (total_minutes > 0)
             {
                 
@@ -24,7 +25,9 @@ namespace LAB9
                 time.Hours = 0;
                 time.Minutes = 0;
                 return time;
+                
             }
+            
         }
         static void Main(string[] args)
         {
@@ -34,18 +37,22 @@ namespace LAB9
 
             Interface.Read(out time);
             Interface.Write(time);
-            
+
             Interface.Read(out time2);
             Interface.Write(time2);
 
-            Console.WriteLine("Вычитание времени через функцию");
+
             time3 = minus(time2, time);
-            Console.WriteLine("Вычитание времени через метод");
             time2.minus(time);
 
+            Console.WriteLine("Вычитание времени через функцию");
             Interface.Write(time2);
+            Console.WriteLine("Вычитание времени через метод");
             Interface.Write(time3);
 
+
+            int count = Time.GetAmount();
+            Console.WriteLine("Количество объектов в классе:" + count);
 
 
 

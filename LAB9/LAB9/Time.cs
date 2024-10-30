@@ -10,7 +10,7 @@ namespace LAB9
     {
         private int hours;
         private int minutes;
-        private int counts;
+        private static int counts;
 
         public int Hours
         {
@@ -31,6 +31,7 @@ namespace LAB9
         {
             Hours = 0;
             Minutes = 0;
+            counts++;
         }
         public Time(int hours, int minutes) {
             if (minutes > 59)
@@ -45,7 +46,11 @@ namespace LAB9
             }
             counts++;
         }
-        public int GetAmount()
+        public static void DecreaseAmount()
+        {
+            counts--;
+        }
+        public static int GetAmount()
         {
             return counts;
         }
