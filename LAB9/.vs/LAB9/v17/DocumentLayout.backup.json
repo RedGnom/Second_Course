@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\C#\\Second_Course\\LAB9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|e:\\c#\\second_course\\lab9\\lab9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|solutionrelative:lab9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|E:\\C#\\Second_Course\\LAB9\\lab9\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|solutionrelative:lab9\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|E:\\C#\\Second_Course\\LAB9\\lab9\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|solutionrelative:lab9\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|e:\\c#\\second_course\\lab9\\lab9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|solutionrelative:lab9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Time.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Time.cs",
+              "RelativeDocumentMoniker": "LAB9\\Time.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Time.cs",
+              "RelativeToolTip": "LAB9\\Time.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAuwE8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T07:07:06.003Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Interface.cs",
               "DocumentMoniker": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Interface.cs",
               "RelativeDocumentMoniker": "LAB9\\Interface.cs",
               "ToolTip": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Interface.cs",
               "RelativeToolTip": "LAB9\\Interface.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAgwCQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T12:22:16.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Time.cs",
-              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Time.cs",
-              "RelativeDocumentMoniker": "LAB9\\Time.cs",
-              "ToolTip": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Time.cs",
-              "RelativeToolTip": "LAB9\\Time.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T07:07:06.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Program.cs",
               "RelativeDocumentMoniker": "LAB9\\Program.cs",
               "ToolTip": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Program.cs",
               "RelativeToolTip": "LAB9\\Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAgwDYAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T07:00:02.463Z",
               "EditorCaption": ""

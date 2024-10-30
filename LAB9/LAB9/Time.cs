@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -70,6 +71,30 @@ namespace LAB9
             }
 
 
+        }
+        public static Time operator ++(Time time)
+        {
+            if (time.Minutes == 59)
+            {
+                time.Hours++;
+                time.Minutes = -1;
+            }
+            time.Minutes++;
+            return time;
+        }
+        public static Time operator --(Time time)
+        {
+            if ((time.minutes==0) && (time.Hours>0))
+            {
+                time.Minutes = 60;
+                time.Hours--;
+            }
+            if (time.Hours==0 && time.Minutes==0)
+            {
+                throw new InvalidOperationException("Невозможно уменьшить время");
+            }
+            time.Minutes--;
+            return time;
         }
     }
 }

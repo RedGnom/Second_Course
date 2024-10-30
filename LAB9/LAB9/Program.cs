@@ -32,29 +32,32 @@ namespace LAB9
         static void Main(string[] args)
         {
             Time time = new Time();
-            Time time2 = new Time();
-            Time time3 = new Time();
+            //Time time2 = new Time();
+            //Time time3 = new Time();
 
             Interface.Read(out time);
             Interface.Write(time);
 
-            Interface.Read(out time2);
-            Interface.Write(time2);
+            //Interface.Read(out time2);
+            //Interface.Write(time2);
 
 
-            time3 = minus(time2, time);
-            time2.minus(time);
+            //time3 = minus(time2, time);
+            //time2.minus(time);
 
-            Console.WriteLine("Вычитание времени через функцию");
-            Interface.Write(time2);
-            Console.WriteLine("Вычитание времени через метод");
-            Interface.Write(time3);
-
-
-            int count = Time.GetAmount();
-            Console.WriteLine("Количество объектов в классе:" + count);
+            //Console.WriteLine("Вычитание времени через функцию");
+            //Interface.Write(time2);
+            //Console.WriteLine("Вычитание времени через метод");
+            //Interface.Write(time3);
 
 
+            //int count = Time.GetAmount();
+            //Console.WriteLine("Количество объектов в классе:" + count);
+
+
+
+            time++;
+            Interface.Write(time);
 
         }
     }
