@@ -5,3 +5,10 @@ E:\C#\Second_Course\LAB9\LAB9\obj\Debug\LAB9.csproj.AssemblyReference.cache
 E:\C#\Second_Course\LAB9\LAB9\obj\Debug\LAB9.csproj.CoreCompileInputs.cache
 E:\C#\Second_Course\LAB9\LAB9\obj\Debug\LAB9.exe
 E:\C#\Second_Course\LAB9\LAB9\obj\Debug\LAB9.pdb
+A:\C#\LAB9\LAB9\bin\Debug\LAB9.exe.config
+A:\C#\LAB9\LAB9\bin\Debug\LAB9.exe
+A:\C#\LAB9\LAB9\bin\Debug\LAB9.pdb
+A:\C#\LAB9\LAB9\obj\Debug\LAB9.csproj.AssemblyReference.cache
+A:\C#\LAB9\LAB9\obj\Debug\LAB9.csproj.CoreCompileInputs.cache
+A:\C#\LAB9\LAB9\obj\Debug\LAB9.exe
+A:\C#\LAB9\LAB9\obj\Debug\LAB9.pdb

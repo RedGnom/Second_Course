@@ -15,7 +15,7 @@ namespace LAB9
             do
             {
                 isCorrect = int.TryParse(Console.ReadLine(), out n);
-                if (!isCorrect || n < 0)
+                if (!isCorrect || n < -1)
                 {
                     Console.WriteLine("Неверные данные, повторите попытку ввода");
                     isCorrect = false;
