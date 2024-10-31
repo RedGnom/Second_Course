@@ -8,7 +8,7 @@ namespace LAB9
 {
     internal class Interface
     {
-        private static int Read()
+        public static int ReadElem()
         {
             int n;
             bool isCorrect = true;
@@ -24,16 +24,25 @@ namespace LAB9
             while (!isCorrect);
             return n;
         }
-        public static void Read(out Time time) {
+        public static void Read(out Time time)
+        {
             Console.WriteLine("Введите количество минут: ");
-            int minutes = Read();
+            int minutes = ReadElem();
             Console.WriteLine("Введите количество часов: ");
-            int hours = Read();
+            int hours = ReadElem();
             time = new Time(hours, minutes);
             Time.DecreaseAmount();
         }
-        public static void Write(Time time) {
-            Console.WriteLine("Количество часов: "+time.Hours+ "  Количество минут: " + time.Minutes);
+        public static void Write(Time time)
+        {
+            Console.WriteLine("Количество часов: " + time.Hours + "  Количество минут: " + time.Minutes);
+        }
+        public static void Write(TimeArray arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Interface.Write(arr[i]);
+            }
         }
 
     }

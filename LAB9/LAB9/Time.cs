@@ -48,7 +48,7 @@ namespace LAB9
         {
             return counts;
         }
-        public Time minus(Time other) {
+        public Time Minus(Time other) {
             int total_minutes = (Minutes+(Hours*60))-(other.Minutes+(other.Hours*60));
             if (total_minutes > 0)
             {
