@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,6 @@ namespace LAB9
         private int hours;
         private int minutes;
         private static int counts;
-
         public int Hours
         {
             get { return hours;}
@@ -35,16 +35,9 @@ namespace LAB9
             counts++;
         }
         public Time(int hours, int minutes) {
-            if (minutes > 59)
-            {
-                Hours = (hours)+1;
-                Minutes = (minutes) - 60;
-            }
-            else
-            {
-                Hours = hours;
-                Minutes = minutes;
-            }
+            int total_minutes = (minutes + (hours * 60));
+            Hours = total_minutes / 60;
+            Minutes = total_minutes % 60;
             counts++;
         }
         public static void DecreaseAmount()
@@ -95,6 +88,33 @@ namespace LAB9
             }
             time.Minutes--;
             return time;
+        }
+        public int ToInt()
+        {
+            int total_minutes = (Minutes + (Hours * 60));
+            return total_minutes;
+        }
+        public bool IsNull()
+        {
+            if (Hours != 0 && Minutes != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator >(Time time1, Time time2) { 
+            int munites_One = time1.Minutes + (time1.Hours * 60);
+            int munites_Two = time2.Minutes + (time2.Hours * 60);
+            return munites_One > munites_Two;
+        }
+        public static bool operator <(Time time1, Time time2) { 
+            int munites_One = time1.Minutes + (time1.Hours * 60);
+            int munites_Two = time2.Minutes + (time2.Hours * 60);
+            return munites_One < munites_Two;
         }
     }
 }

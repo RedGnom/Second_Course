@@ -32,14 +32,14 @@ namespace LAB9
         static void Main(string[] args)
         {
             Time time = new Time();
-            //Time time2 = new Time();
+            Time time2 = new Time();
             //Time time3 = new Time();
 
             Interface.Read(out time);
             Interface.Write(time);
 
-            //Interface.Read(out time2);
-            //Interface.Write(time2);
+            Interface.Read(out time2);
+            Interface.Write(time2);
 
 
             //time3 = minus(time2, time);
@@ -54,10 +54,13 @@ namespace LAB9
             //int count = Time.GetAmount();
             //Console.WriteLine("Количество объектов в классе:" + count);
 
+            //int minutes = time.ToInt();
+            //bool IsNull = time.IsNull();
+            //Console.WriteLine("Количество минут: " + minutes + "  Проверка: " + IsNull);
+            Console.WriteLine(time > time2);
 
 
-            time++;
-            Interface.Write(time);
+
 
         }
     }
