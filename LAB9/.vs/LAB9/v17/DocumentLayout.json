@@ -1,22 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\C#\\Second_Course\\LAB9\\",
+  "WorkspaceRootPath": "A:\\C#\\LAB9\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|e:\\c#\\second_course\\lab9\\lab9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|a:\\c#\\lab9\\lab9\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|solutionrelative:lab9\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|A:\\C#\\LAB9\\lab9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|solutionrelative:lab9\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|E:\\C#\\Second_Course\\LAB9\\lab9\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|solutionrelative:lab9\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0FD4F6F1-9B8C-4D93-989E-EC404DEDC361}|TestLab9\\TestLab9.csproj|A:\\C#\\LAB9\\testlab9\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD4F6F1-9B8C-4D93-989E-EC404DEDC361}|TestLab9\\TestLab9.csproj|solutionrelative:testlab9\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|E:\\C#\\Second_Course\\LAB9\\lab9\\timearray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|A:\\C#\\LAB9\\lab9\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|solutionrelative:lab9\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|A:\\C#\\LAB9\\lab9\\timearray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|solutionrelative:lab9\\timearray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|E:\\C#\\Second_Course\\LAB9\\lab9\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|solutionrelative:lab9\\time.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|A:\\C#\\LAB9\\lab9\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9552FC2E-17FF-4C13-80BE-917A247E60C0}|LAB9\\LAB9.csproj|solutionrelative:lab9\\interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,60 +34,103 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ClassDiagram1.cd",
+              "DocumentMoniker": "A:\\C#\\LAB9\\LAB9\\ClassDiagram1.cd",
+              "RelativeDocumentMoniker": "LAB9\\ClassDiagram1.cd",
+              "ToolTip": "A:\\C#\\LAB9\\LAB9\\ClassDiagram1.cd",
+              "RelativeToolTip": "LAB9\\ClassDiagram1.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-11-07T11:16:53.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Time.cs",
-              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Time.cs",
+              "DocumentMoniker": "A:\\C#\\LAB9\\LAB9\\Time.cs",
               "RelativeDocumentMoniker": "LAB9\\Time.cs",
-              "ToolTip": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Time.cs",
+              "ToolTip": "A:\\C#\\LAB9\\LAB9\\Time.cs",
               "RelativeToolTip": "LAB9\\Time.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAA7wDIAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwJ0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T07:07:06.003Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TimeArray.cs",
-              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB9\\LAB9\\TimeArray.cs",
-              "RelativeDocumentMoniker": "LAB9\\TimeArray.cs",
-              "ToolTip": "E:\\C#\\Second_Course\\LAB9\\LAB9\\TimeArray.cs",
-              "RelativeToolTip": "LAB9\\TimeArray.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA5wA4AAAA4AAAAAAAAAA==",
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "A:\\C#\\LAB9\\TestLab9\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "TestLab9\\UnitTest1.cs",
+              "ToolTip": "A:\\C#\\LAB9\\TestLab9\\UnitTest1.cs",
+              "RelativeToolTip": "TestLab9\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T15:52:19.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T06:13:35.655Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Interface.cs",
-              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Interface.cs",
-              "RelativeDocumentMoniker": "LAB9\\Interface.cs",
-              "ToolTip": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Interface.cs",
-              "RelativeToolTip": "LAB9\\Interface.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "A:\\C#\\LAB9\\LAB9\\Program.cs",
+              "RelativeDocumentMoniker": "LAB9\\Program.cs",
+              "ToolTip": "A:\\C#\\LAB9\\LAB9\\Program.cs",
+              "RelativeToolTip": "LAB9\\Program.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAiwEYAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T12:22:16.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-29T07:00:02.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Program.cs",
-              "RelativeDocumentMoniker": "LAB9\\Program.cs",
-              "ToolTip": "E:\\C#\\Second_Course\\LAB9\\LAB9\\Program.cs",
-              "RelativeToolTip": "LAB9\\Program.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAiwFYAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "TimeArray.cs",
+              "DocumentMoniker": "A:\\C#\\LAB9\\LAB9\\TimeArray.cs",
+              "RelativeDocumentMoniker": "LAB9\\TimeArray.cs",
+              "ToolTip": "A:\\C#\\LAB9\\LAB9\\TimeArray.cs",
+              "RelativeToolTip": "LAB9\\TimeArray.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T07:00:02.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-31T15:52:19.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Interface.cs",
+              "DocumentMoniker": "A:\\C#\\LAB9\\LAB9\\Interface.cs",
+              "RelativeDocumentMoniker": "LAB9\\Interface.cs",
+              "ToolTip": "A:\\C#\\LAB9\\LAB9\\Interface.cs",
+              "RelativeToolTip": "LAB9\\Interface.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAmwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T12:22:16.862Z"
             }
           ]
         }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Numerics;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,17 +16,34 @@ namespace LAB9
         private static int counts;
         public int Hours
         {
-            get { return hours;}
-            set {
-                hours = value;
-            }
-        }
-        public int Minutes
-        {
-            get {return minutes; }
+            get { return hours; }
             set
             {
-                minutes = value;
+                if (value >= 0)
+                {
+                    hours = value;
+                }
+                else
+                {
+                    throw new Exception("Время не может быть меньше 0");
+                }
+            }
+        }
+
+        public int Minutes
+        {
+            get { return minutes; }
+            set
+            {
+                if (value >= 0)
+                {
+                    hours += value / 60;
+                    minutes = value % 60;
+                }
+                else
+                {
+                    throw new Exception("Время не может быть меньше 0");
+                }
             }
         }
         public Time()
@@ -34,11 +52,19 @@ namespace LAB9
             Minutes = 0;
             counts++;
         }
-        public Time(int hours, int minutes) {
-            int total_minutes = (minutes + (hours * 60));
-            Hours = total_minutes / 60;
-            Minutes = total_minutes % 60;
+
+        public Time(int hours, int minutes)
+        {
+            Hours = hours;
+            Minutes = minutes;
             counts++;
+        }
+        //public Time(int minutes) {
+        //    Minutes = minutes;
+        //}
+        public static void AmountToNull()
+        {
+            counts = 0;
         }
         public static void DecreaseAmount()
         {
@@ -48,47 +74,57 @@ namespace LAB9
         {
             return counts;
         }
-        public Time Minus(Time other) {
-            int total_minutes = (Minutes+(Hours*60))-(other.Minutes+(other.Hours*60));
-            if (total_minutes > 0)
+        public Time Minus(Time other)
+        {
+            int total_minutes = this.ToInt() - other.ToInt();
+            if (total_minutes >= 0)
             {
-                Hours = total_minutes / 60;
-                Minutes = total_minutes % 60;
+                this.Minutes = 0;
+                this.Hours = 0;
+                this.Minutes = total_minutes;
                 return this;
             }
             else
             {
-                Hours = 0;
-                Minutes = 0;
-                return this;
+                throw new InvalidOperationException("Невозможно уменьшить время");
             }
-
-
         }
+
         public static Time operator ++(Time time)
         {
-            if (time.Minutes == 59)
-            {
-                time.Hours++;
-                time.Minutes = -1;
-            }
             time.Minutes++;
             return time;
         }
         public static Time operator --(Time time)
         {
-            if ((time.minutes==0) && (time.Hours>0))
-            {
-                time.Minutes = 60;
-                time.Hours--;
-            }
-            if (time.Hours==0 && time.Minutes==0)
+            if (time.Hours == 0 && time.Minutes == 0)
             {
                 throw new InvalidOperationException("Невозможно уменьшить время");
             }
-            time.Minutes--;
+            //if (time.Minutes == 0)
+            //{
+            //    time.Minutes = 0;
+            //    time.Hours = 0;
+            //    int total = time.ToInt();
+            //    total--;
+            //    time.Minutes = total;
+            //}
+
+            if (time.Minutes == 0)
+            {
+                if (time.Hours > 0)
+                {
+                    time.Hours--;
+                    time.Minutes = 59;
+                }
+            }
+            else
+            {
+                time.Minutes--;
+            }
             return time;
         }
+
         public int ToInt()
         {
             int total_minutes = (Minutes + (Hours * 60));
@@ -105,15 +141,16 @@ namespace LAB9
                 return false;
             }
         }
-
-        public static bool operator >(Time time1, Time time2) { 
-            int munites_One = time1.Minutes + (time1.Hours * 60);
-            int munites_Two = time2.Minutes + (time2.Hours * 60);
+        public static bool operator >(Time time1, Time time2)
+        {
+            int munites_One = time1.ToInt();
+            int munites_Two = time2.ToInt();
             return munites_One > munites_Two;
         }
-        public static bool operator <(Time time1, Time time2) { 
-            int munites_One = time1.Minutes + (time1.Hours * 60);
-            int munites_Two = time2.Minutes + (time2.Hours * 60);
+        public static bool operator <(Time time1, Time time2)
+        {
+            int munites_One = time1.ToInt();
+            int munites_Two = time2.ToInt();
             return munites_One < munites_Two;
         }
     }
