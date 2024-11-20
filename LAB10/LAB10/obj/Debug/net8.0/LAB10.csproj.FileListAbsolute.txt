@@ -1,0 +1,15 @@
+E:\C#\Second_Course\LAB10\LAB10\bin\Debug\net8.0\LAB10.exe
+E:\C#\Second_Course\LAB10\LAB10\bin\Debug\net8.0\LAB10.deps.json
+E:\C#\Second_Course\LAB10\LAB10\bin\Debug\net8.0\LAB10.runtimeconfig.json
+E:\C#\Second_Course\LAB10\LAB10\bin\Debug\net8.0\LAB10.dll
+E:\C#\Second_Course\LAB10\LAB10\bin\Debug\net8.0\LAB10.pdb
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\LAB10.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\LAB10.AssemblyInfoInputs.cache
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\LAB10.AssemblyInfo.cs
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\LAB10.csproj.CoreCompileInputs.cache
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\LAB10.sourcelink.json
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\LAB10.dll
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\refint\LAB10.dll
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\LAB10.pdb
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\LAB10.genruntimeconfig.cache
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\ref\LAB10.dll
