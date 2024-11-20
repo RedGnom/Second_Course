@@ -10,12 +10,13 @@ namespace LAB9
     public class TimeArray
 
     {
-        //private int amount = 0;
+        private static int amount = 0;
         Time[] arr;
         public int Length { get { return arr.Length; } }
         public TimeArray()
         {
             arr = new Time[0];
+            amount++;
         }
        
         public TimeArray(int size, Random rnd)
@@ -24,8 +25,18 @@ namespace LAB9
             for (int i = 0; i < size; i++) {
                 arr[i] = new Time(rnd.Next(0, 100), rnd.Next(0, 59));
             }
+            amount++;
         }
-        public TimeArray(int size, Random rnd, bool byUser)
+        public TimeArray(int size)
+        {
+            arr = new Time[size];
+            for (int i = 0; i < size; i++)
+            {
+                arr[i] = new Time();
+            }
+            amount++;
+        }
+        public TimeArray(int size, bool byUser)
         {
             arr = new Time[size];
             if (byUser) {
@@ -37,6 +48,7 @@ namespace LAB9
                     arr[i] = time;
                 }
             }
+            amount++;
         }
 
         public Time this[int index] { 
@@ -64,17 +76,28 @@ namespace LAB9
         }
         public Time GetMax()
         {
-            Time max = arr[0];
-            for (int i = 0;i < arr.Length; i++)
+            if (arr.Length == 0)
             {
-                if(max < arr[i])
-                {
-                    max = arr[i];
-                }
+                throw new ArgumentException("Невозможно получиить наименьший.");
             }
-            Time.DecreaseAmount();
-            return max;
-
+            else
+            {
+                Time max = arr[0];
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    if (max < arr[i])
+                    {
+                        max = arr[i];
+                    }
+                }
+                Time.DecreaseAmount();
+                return max;
+            }
+            
+        }
+        static public int GetAmount()
+        {
+            return amount;
         }
 
     }

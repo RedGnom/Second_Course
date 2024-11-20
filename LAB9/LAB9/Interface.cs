@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LAB9
 {
-    internal class Interface
+    public class Interface
     {
         public static int ReadElem()
         {
@@ -15,7 +15,7 @@ namespace LAB9
             do
             {
                 isCorrect = int.TryParse(Console.ReadLine(), out n);
-                if (!isCorrect || n < -1)
+                if (!isCorrect || n < 0)
                 {
                     Console.WriteLine("Неверные данные, повторите попытку ввода");
                     isCorrect = false;
@@ -33,15 +33,21 @@ namespace LAB9
             time = new Time(hours, minutes);
             Time.DecreaseAmount();
         }
-        public static void Write(Time time)
+        public static void Write(Time time) 
         {
             Console.WriteLine("Количество часов: " + time.Hours + "  Количество минут: " + time.Minutes);
         }
         public static void Write(TimeArray arr)
         {
-            for (int i = 0; i < arr.Length; i++)
+            if (arr.Length == 0)
             {
-                Interface.Write(arr[i]);
+                Console.WriteLine("Массив пустой");
+            }
+            else {
+                for (int i = 0; i < arr.Length; i++)
+                {
+                    Interface.Write(arr[i]);
+                }
             }
         }
 
