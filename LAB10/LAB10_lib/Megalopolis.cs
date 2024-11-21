@@ -36,6 +36,7 @@ namespace LAB10_lib
         }
         public override void Show()
         {
+
             base.Show();
             Console.WriteLine("Загрязнение воздуха: " + Pollution);
 

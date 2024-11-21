@@ -32,3 +32,7 @@ A:\C#\LAB10\LAB10\obj\Debug\net8.0\refint\LAB10.dll
 A:\C#\LAB10\LAB10\obj\Debug\net8.0\LAB10.pdb
 A:\C#\LAB10\LAB10\obj\Debug\net8.0\LAB10.genruntimeconfig.cache
 A:\C#\LAB10\LAB10\obj\Debug\net8.0\ref\LAB10.dll
+E:\C#\Second_Course\LAB10\LAB10\bin\Debug\net8.0\LAB10_lib.dll
+E:\C#\Second_Course\LAB10\LAB10\bin\Debug\net8.0\LAB10_lib.pdb
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\LAB10.csproj.AssemblyReference.cache
+E:\C#\Second_Course\LAB10\LAB10\obj\Debug\net8.0\LAB10.csproj.Up2Date

@@ -98,6 +98,7 @@ namespace LAB10_lib
         }
         public override void Show()
         {
+            
             base.Show();
             Console.WriteLine("Город: " + CityName);
             Console.WriteLine("Население: " + Population);
