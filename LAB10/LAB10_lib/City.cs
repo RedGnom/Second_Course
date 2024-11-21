@@ -15,20 +15,13 @@ namespace LAB10_lib
             get { return population; }
             set
             {
-                if (int.TryParse(Console.ReadLine(), out value))
+                if (value >= 0)
                 {
-                    if (value >= 0)
-                    {
-                        population = value;
-                    }
-                    else
-                    {
-                        throw new Exception("Население не может быть меньше 0");
-                    }
+                    population = value;
                 }
                 else
                 {
-                    throw new Exception("Население должно быть числом");
+                    throw new Exception("Население не может быть меньше 0");
                 }
             }
         }
@@ -44,20 +37,25 @@ namespace LAB10_lib
         }
         public City(City other) : base(other.Name)
         {
-            CityName = other.Name;
+            CityName = other.CityName;
             Population = other.Population;
         }
         public override void Init()
         {
             base.Init();
+
             Console.WriteLine("Введите название города: ");
             CityName = Console.ReadLine();
+
+            Console.WriteLine("Введите население: ");
             try
             {
-                Console.WriteLine("Введите население: ");
                 Population = int.Parse(Console.ReadLine());
             }
-            catch (Exception e) { Console.WriteLine(e.Message); }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Введите корректное население.");
+            }
         }
         public override void RandomInit()
         {
@@ -101,8 +99,9 @@ namespace LAB10_lib
         public override void Show()
         {
             base.Show();
-            Console.WriteLine("Город:" + CityName);
-            Console.WriteLine("Население" + Population);
+            Console.WriteLine("Город: " + CityName);
+            Console.WriteLine("Население: " + Population);
+
         }
         public override bool Equals(object obj)
         {

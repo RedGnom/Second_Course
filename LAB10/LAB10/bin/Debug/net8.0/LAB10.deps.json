@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "LAB10/1.0.0": {
+        "dependencies": {
+          "LAB10_lib": "1.0.0"
+        },
         "runtime": {
           "LAB10.dll": {}
+        }
+      },
+      "LAB10_lib/1.0.0": {
+        "runtime": {
+          "LAB10_lib.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "LAB10/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LAB10_lib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

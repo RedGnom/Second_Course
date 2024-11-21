@@ -11,17 +11,18 @@ namespace LAB10_lib
 
     public class Region: Place
     {
-        protected Random rnd = new Random();
+        
         
         public Region(): base(){ }
         public Region(string name) : base(name) { }
         public Region(Region other) : base(other) { }
-        public virtual void Init()
+        public override void Init()
         {
-            Console.WriteLine("Введите название области");
-            Name = Console.ReadLine();
+            Console.WriteLine("Введите название области: ");
+            Name = Console.ReadLine(); 
         }
-        public virtual void RandomInit()
+
+        public override void RandomInit()
         {
             string[] randomRegion = new string[] {
                 "Архангельская область",
@@ -56,12 +57,19 @@ namespace LAB10_lib
         }
         public override void Show()
         {
-            Console.Write("Название области");
+            Console.Write("Название области: ");
             base.Show();
+            
         }
-        public override bool Equals(Object obj)
+        public override bool Equals(object obj)
         {
-            return Equals(base.Equals(obj));
+            // Вызов метода базового класса для общей логики
+            if (!base.Equals(obj)) return false;
+            // Упрощенная проверка на тип Region
+            if (obj is not Region other) return false; // Проверка на тип и приведение
+            // Сравнение дополнительных свойств
+            return Name == other.Name;
         }
+
     }
 }

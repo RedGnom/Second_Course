@@ -1,0 +1,12 @@
+A:\C#\LAB10\LAB10_lib\bin\Debug\net8.0\LAB10_lib.deps.json
+A:\C#\LAB10\LAB10_lib\bin\Debug\net8.0\LAB10_lib.dll
+A:\C#\LAB10\LAB10_lib\bin\Debug\net8.0\LAB10_lib.pdb
+A:\C#\LAB10\LAB10_lib\obj\Debug\net8.0\LAB10_lib.GeneratedMSBuildEditorConfig.editorconfig
+A:\C#\LAB10\LAB10_lib\obj\Debug\net8.0\LAB10_lib.AssemblyInfoInputs.cache
+A:\C#\LAB10\LAB10_lib\obj\Debug\net8.0\LAB10_lib.AssemblyInfo.cs
+A:\C#\LAB10\LAB10_lib\obj\Debug\net8.0\LAB10_lib.csproj.CoreCompileInputs.cache
+A:\C#\LAB10\LAB10_lib\obj\Debug\net8.0\LAB10_lib.sourcelink.json
+A:\C#\LAB10\LAB10_lib\obj\Debug\net8.0\LAB10_lib.dll
+A:\C#\LAB10\LAB10_lib\obj\Debug\net8.0\refint\LAB10_lib.dll
+A:\C#\LAB10\LAB10_lib\obj\Debug\net8.0\LAB10_lib.pdb
+A:\C#\LAB10\LAB10_lib\obj\Debug\net8.0\ref\LAB10_lib.dll

@@ -3,6 +3,7 @@
     public class Place
     {
         private string name = string.Empty;
+        protected Random rnd = new Random();
         public  string Name {
             get { return name; }
             set { name = value; }
@@ -21,10 +22,23 @@
         {
             Console.WriteLine(Name);
         }
-        public override bool Equals(Object obj)
+        public virtual void Init()
         {
-            if (obj == null) return false;
-            Place other = (Place)obj;
+            Console.WriteLine("Введите место: ");
+            Name = Console.ReadLine();
+        }
+        public virtual void RandomInit()
+        {
+            Name = "Место" + (rnd.Next(1,100)).ToString();
+        }
+        public override bool Equals(object obj)
+        {
+            // Общая логика проверки
+            if (obj == null || !(obj is Place other))
+            {
+                return false;
+            }
+            // Сравнение свойств для Place
             return Name == other.Name;
         }
 

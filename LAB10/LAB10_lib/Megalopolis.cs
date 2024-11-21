@@ -14,23 +14,17 @@ namespace LAB10_lib
             get { return pollution; }
             set
             {
-                if (int.TryParse(Console.ReadLine(), out value))
+                if (value >= 0)
                 {
-                    if (value >= 0)
-                    {
-                        pollution = value;
-                    }
-                    else
-                    {
-                        throw new Exception("Загрязнение не может быть меньше 0");
-                    }
+                    pollution = value;
                 }
                 else
                 {
-                    throw new Exception("Загрязнение должно быть числом");
+                    throw new Exception("Загрязнение не может быть меньше 0");
                 }
             }
         }
+
 
         public Megalopolis(string name, string cityName, int population, int pollution) : base(name, cityName, population)
         {
@@ -43,7 +37,8 @@ namespace LAB10_lib
         public override void Show()
         {
             base.Show();
-            Console.WriteLine("Загрязнение воздуха" + Pollution);
+            Console.WriteLine("Загрязнение воздуха: " + Pollution);
+
         }
         public override void Init()
         {

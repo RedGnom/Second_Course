@@ -16,8 +16,7 @@ namespace LAB10_lib
             get { return house; }
             set
             {
-                if (int.TryParse(Console.ReadLine(), out value))
-                {
+
                     if (value >= 0)
                     {
                         house = value;
@@ -26,11 +25,7 @@ namespace LAB10_lib
                     {
                         throw new Exception("Номер дома не может быть меньше 0");
                     }
-                }
-                else
-                {
-                    throw new Exception("Номер дома должно быть числом");
-                }
+                
             }
         }
         public int Flat
@@ -38,8 +33,6 @@ namespace LAB10_lib
             get { return flat; }
             set
             {
-                if (int.TryParse(Console.ReadLine(), out value))
-                {
                     if (value >= 0)
                     {
                         flat = value;
@@ -48,11 +41,7 @@ namespace LAB10_lib
                     {
                         throw new Exception("Номер квартиры не может быть меньше 0");
                     }
-                }
-                else
-                {
-                    throw new Exception("Номер квартиры должно быть числом");
-                }
+                
             }
         }
         public string Street { get { return street; } set { street = value; } }
@@ -134,6 +123,7 @@ namespace LAB10_lib
             Console.WriteLine("Улица: " + Street);
             Console.WriteLine("Дом: " + House);
             Console.WriteLine("Квартира " + Flat);
+            
         }
         public override bool Equals(object obj)
         {
