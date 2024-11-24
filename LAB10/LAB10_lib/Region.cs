@@ -31,14 +31,14 @@ namespace LAB10_lib
         }
 
         public Region(): base(){ }
-        public Region(string name) : base(name) { }
+        public Region(string country, string name) : base(country, name) { }
         public Region(Region other) : base(other) { }
         
         public void AddCity(City city)
         {
             if (city == null)
             {
-                throw new ArgumentNullException(nameof(city), "City cannot be null");
+                throw new ArgumentNullException(nameof(city), "Город не может быть null");
             }
 
             if (city is City || city is Megalopolis)
@@ -52,7 +52,7 @@ namespace LAB10_lib
             }
             else
             {
-                throw new ArgumentException("Object must be of type City or Megapolis");
+                throw new ArgumentException("Объект должен быть из класса city или megalopolis");
             }
         }
         public void ShowCities()

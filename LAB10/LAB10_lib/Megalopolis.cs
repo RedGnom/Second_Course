@@ -26,12 +26,12 @@ namespace LAB10_lib
         }
 
 
-        public Megalopolis(string name, string cityName, int population, int pollution) : base(name, cityName, population)
+        public Megalopolis(string country, string name, string cityName, int population, int pollution) : base(country, name, cityName, population)
         {
             Pollution = pollution;
         }
         public Megalopolis() : base() { Pollution = 0; }
-        public Megalopolis(Megalopolis other) : base(other.Name, other.CityName, other.Population) {
+        public Megalopolis(Megalopolis other) : base(other.Country,other.Name, other.CityName, other.Population) {
             Pollution = other.Pollution;
         }
         public override void Show()

@@ -26,7 +26,7 @@ namespace LAB10_lib
             }
         }
         public string CityName { get { return cityName; } set { cityName = value; } }
-        public  City(string name,string cityName, int population): base(name){
+        public  City(string country,string name,string cityName, int population): base(country, name){
             CityName = cityName;
             Population = population;
         }
@@ -35,7 +35,7 @@ namespace LAB10_lib
             CityName = ' '.ToString();
             Population = 0;
         }
-        public City(City other) : base(other.Name)
+        public City(City other) : base(other.Country,other.Name)
         {
             CityName = other.CityName;
             Population = other.Population;

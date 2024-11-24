@@ -19,7 +19,8 @@
             get { return name; }
             set { name = value; }
         }
-        public Place(string name) {
+        public Place(string country, string name) {
+            Country = country;
             Name = name;
         }
         public Place() {

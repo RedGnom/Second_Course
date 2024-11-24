@@ -45,7 +45,7 @@ namespace LAB10_lib
             }
         }
         public string Street { get { return street; } set { street = value; } }
-        public Address(string name, string cityName, int population, int house, int flat, string street) : base(name, cityName, 0)
+        public Address(string country,string name, string cityName, int population, int house, int flat, string street) : base(country, name, cityName, 0)
         {
             House = house;
             Flat = flat;
