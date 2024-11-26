@@ -62,5 +62,18 @@ namespace LAB10_lib
             Megalopolis other = (Megalopolis)obj;
             return (Pollution == other.Pollution);
         }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+        public override Place ShallowCopy()
+        {
+            return (Megalopolis)this.MemberwiseClone();
+        }
+        public override object Clone()
+        {
+            return new Megalopolis(Country, Name, CityName, Population, Pollution);
+
+        }
     }
 }

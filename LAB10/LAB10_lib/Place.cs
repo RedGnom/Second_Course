@@ -1,11 +1,14 @@
-﻿namespace LAB10_lib
+﻿using System;
+
+namespace LAB10_lib
 {
-    interface IInit
+    public interface IInit
     {
         void Init();
         void RandomInit();
+        void Show();
     }
-    public class Place: IInit, IComparable<Place>
+    public class Place: IInit, IComparable<Place>, ICloneable
     {
         private string country = string.Empty;
         private string name = string.Empty;
@@ -77,6 +80,14 @@
         public override int GetHashCode()
         {
             return (Country, Name).GetHashCode();
+        }
+        public virtual Place ShallowCopy() //поверхностное копирование
+        {
+            return (Place)this.MemberwiseClone();
+        }
+        public virtual object Clone()
+        {
+            return new Place(this.country, "Клон" + this.name );
         }
 
 

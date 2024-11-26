@@ -54,7 +54,7 @@ namespace LAB10_lib
             }
             catch (FormatException e)
             {
-                Console.WriteLine("Введите корректное население.");
+                Console.WriteLine(e.Message);
             }
         }
         public override void RandomInit()
@@ -109,6 +109,19 @@ namespace LAB10_lib
             if (!base.Equals(obj)) { return false; }
             City other = (City)obj;
             return Population == other.Population;
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+        public override Place ShallowCopy()
+        {
+            return (City)this.MemberwiseClone();
+        }
+        public override object Clone()
+        {
+            return new City(Country, Name, CityName, Population);
+            
         }
     }
 }

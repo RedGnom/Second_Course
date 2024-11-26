@@ -12,18 +12,18 @@ namespace LAB10_lib
     public class Region: Place
     {
         private List<City> cities = new List<City>();
-        private int amount=0;
+        //private int amount=0;
         private int totalPopulation;
         public int TotalPopulation
         {
             get { return totalPopulation; }
-           
+            
         }
-        public int Amount
-        {
-            get { return amount; }
+        //public int Amount
+        //{
+        //    get { return amount; }
 
-        }
+        //}
         public List<City> Cities
         {
             get { return cities; }
@@ -46,8 +46,6 @@ namespace LAB10_lib
                 if (city.Name == Name)
                 {
                     Cities.Add(city);
-                    totalPopulation += city.Population;
-                    amount++;
                 }
             }
             else
@@ -64,11 +62,15 @@ namespace LAB10_lib
         }
         public void ShowPopulation()
         {
+            foreach (City city in Cities)
+            {
+                totalPopulation += city.Population;
+            }
             Console.WriteLine(TotalPopulation);
         }
         public void ShowAmount()
         {
-            Console.WriteLine(Amount);
+            Console.WriteLine(Cities.Count);
         }
         public override void Init()
         {
@@ -124,6 +126,23 @@ namespace LAB10_lib
             // Сравнение дополнительных свойств
             return Name == other.Name;
         }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+        public override Place ShallowCopy()
+        {
+            return (Region)this.MemberwiseClone();
+        }
+        public override object Clone()
+        {
+            Region copy = new Region(this.Country, this.Name);
+            foreach (City city in Cities) {
+                copy.Cities.Add(city);
+            }
+            return copy;
+        }
+
 
     }
 }

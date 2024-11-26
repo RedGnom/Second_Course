@@ -131,5 +131,17 @@ namespace LAB10_lib
             Address other = (Address)obj;
             return ((Street == other.Street)&&(House==other.House)&&(Flat==other.Flat));
         }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+        public override Place ShallowCopy()
+        {
+            return (Address)this.MemberwiseClone();
+        }
+        public override object Clone()
+        {
+            return new Address(Country, Name, CityName, Population, House, Flat, Street);
+        }
     }
 }
