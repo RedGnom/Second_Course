@@ -114,21 +114,41 @@ class Program
         region.ShowPopulation();
         Console.WriteLine("Количество городов");
         region.ShowAmount();
+        Region clone = (Region)region.ShallowCopy();
+        Region clone2 = (Region)region.Clone();
+        Console.WriteLine("Вывод клонов объекта");
+        clone.Show();
+        clone.ShowCities();
+        clone2.Show();
+        clone2.ShowCities();
+        City test = new City(" ", "Пермский край", "Петропавловск", 10090);
+        region.AddCity(test);
+        Console.WriteLine("Добавился город в область");
+        test.Show();
+        Console.WriteLine("Первый клон: ");
+        clone.ShowCities();
+        Console.WriteLine("Второй клон: ");
+        clone2.ShowCities();
 
-        Console.WriteLine("Поиск города по области, : ");
-        //arr2[4] = new City("", "Белгородская область", "Белгород", 350000);
-        Place targetPlace = new City("", "Белгородская область", "", 0); ;
-        int index = Array.BinarySearch(arr2, targetPlace, new Comparer());
 
-        if (index >= 0)
-        {
-            Console.WriteLine($"Элемент найден на индексе: {index}");
-            arr2[index].Show();
-        }
-        else
-        {
-            Console.WriteLine("Элемент не найден.");
-        }
+
+
+
+
+        //Console.WriteLine("Поиск города по области, : ");
+        ////arr2[4] = new City("", "Белгородская область", "Белгород", 350000);
+        //Place targetPlace = new City("", "Белгородская область", "", 0); ;
+        //int index = Array.BinarySearch(arr2, targetPlace, new Comparer());
+
+        //if (index >= 0)
+        //{
+        //    Console.WriteLine($"Элемент найден на индексе: {index}");
+        //    arr2[index].Show();
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Элемент не найден.");
+        //}
 
 
         //    Console.WriteLine("\n\n\n\n");
@@ -149,6 +169,10 @@ class Program
         //    foreach (IInit obj in arr3) {
         //       obj.Show();
         //    }
+
+
+
+
 
     }
 }
