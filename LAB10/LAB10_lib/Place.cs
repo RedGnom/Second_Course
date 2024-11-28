@@ -87,8 +87,9 @@ namespace LAB10_lib
         }
         public virtual object Clone()
         {
-            return new Place(this.country, "Клон" + this.name );
+            return new Place(this.country, this.name );
         }
+
 
 
     }

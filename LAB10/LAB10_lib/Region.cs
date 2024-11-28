@@ -46,6 +46,7 @@ namespace LAB10_lib
                 if (city.Name == Name)
                 {
                     Cities.Add(city);
+                    totalPopulation += city.Population;
                 }
             }
             else
@@ -62,10 +63,7 @@ namespace LAB10_lib
         }
         public void ShowPopulation()
         {
-            foreach (City city in Cities)
-            {
-                totalPopulation += city.Population;
-            }
+
             Console.WriteLine(TotalPopulation);
         }
         public void ShowAmount()
