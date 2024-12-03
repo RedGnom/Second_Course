@@ -1,0 +1,15 @@
+A:\C#\Math\bin\Debug\net8.0\Math.exe
+A:\C#\Math\bin\Debug\net8.0\Math.deps.json
+A:\C#\Math\bin\Debug\net8.0\Math.runtimeconfig.json
+A:\C#\Math\bin\Debug\net8.0\Math.dll
+A:\C#\Math\bin\Debug\net8.0\Math.pdb
+A:\C#\Math\obj\Debug\net8.0\Math.GeneratedMSBuildEditorConfig.editorconfig
+A:\C#\Math\obj\Debug\net8.0\Math.AssemblyInfoInputs.cache
+A:\C#\Math\obj\Debug\net8.0\Math.AssemblyInfo.cs
+A:\C#\Math\obj\Debug\net8.0\Math.csproj.CoreCompileInputs.cache
+A:\C#\Math\obj\Debug\net8.0\Math.sourcelink.json
+A:\C#\Math\obj\Debug\net8.0\Math.dll
+A:\C#\Math\obj\Debug\net8.0\refint\Math.dll
+A:\C#\Math\obj\Debug\net8.0\Math.pdb
+A:\C#\Math\obj\Debug\net8.0\Math.genruntimeconfig.cache
+A:\C#\Math\obj\Debug\net8.0\ref\Math.dll
