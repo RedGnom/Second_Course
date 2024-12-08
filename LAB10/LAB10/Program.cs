@@ -69,16 +69,31 @@ class Program
                         arr[i].Show();
                         Console.WriteLine();
                     }
+
+                    Console.WriteLine("Вывод невиртуально");
+                    foreach (var p in arr)
+                    {
+                        // Проверка типа объекта
+                        if (p is Region r)
+                        {
+                            r.ShowNonVirtual();
+                        }
+                        else if (p is City c)
+                        {
+                            c.ShowNonVirtual();
+                        }
+
+                        Console.WriteLine();
+                    }
                     Console.WriteLine("Сортировка массива через comparable страны: ");
                     Array.Sort(arr);
                     Console.WriteLine("Отсортированный: ");
                     foreach (Place p in arr)
                     {
-
                         p.Show();
                         Console.WriteLine();
                     }
-                    Console.WriteLine("Сортировка через compare области");
+                    Console.WriteLine("Сортировка через comparer области");
                     Array.Sort(arr, new Comparer());
                     Console.WriteLine("Отсортированный: ");
                     foreach (Place p in arr)
@@ -88,9 +103,10 @@ class Program
                     }
                     break;
                 case 2:
-                    Console.WriteLine("Введите область из которой нужно получить города: ");
+                    //Console.WriteLine("Введите область из которой нужно получить города: ");
+                    Console.WriteLine("Область в которой будут браться города: ");
                     Region region = new Region();
-                    region.Init();
+                    region.RandomInit();
                     region.Show();
                     Console.WriteLine("\n\n");
                     Console.WriteLine("Вывод всех городов и мегаполисов: ");
@@ -137,14 +153,20 @@ class Program
                     Console.WriteLine("Второй клон: ");
                     clone2.ShowCities();
 
-                    Console.WriteLine("Поиск города по области, : ");
+                    Console.WriteLine("Поиск города по области, : (Пермский край)  ");
 
                     //arr2[2] = new City("", "Белгородская область", "Белгород", 350000);
-                    Place targetPlace = new City("", region.Name, "", 0); ;
+                    Place targetPlace = new City("", "Пермский край", "", 0); ;
                     int index = Array.BinarySearch(arr2, targetPlace, new Comparer());
 
                     if (index >= 0)
                     {
+                        // Сдвигаемся влево до первого элемента с таким же названием области
+                        while (index > 0 && arr2[index - 1].Name == targetPlace.Name)
+                        {
+                            index--;
+                        }
+
                         Console.WriteLine($"Элемент найден на номере: {index+1}");
                         arr2[index].Show();
                     }
@@ -152,6 +174,7 @@ class Program
                     {
                         Console.WriteLine("Элемент не найден.");
                     }
+
                     break;
                 case 3:
                     Console.WriteLine("Ввод элементов интерфейса iinit");
@@ -170,7 +193,16 @@ class Program
 
                     foreach (IInit obj in arr3)
                     {
-                        obj.Show();
+                        if (obj is Place placeObj)
+                        {
+                            placeObj.Show();
+                        }
+                        else if (obj is Vehicle vehicleObj)
+                        {
+                            vehicleObj.Show();
+                        }
+
+
                     }
                     break ;
                 case 4:

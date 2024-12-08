@@ -6,7 +6,7 @@ namespace LAB10_lib
     {
         void Init();
         void RandomInit();
-        void Show();
+        //void Show();
     }
     public class Place: IInit, IComparable<Place>, ICloneable
     {

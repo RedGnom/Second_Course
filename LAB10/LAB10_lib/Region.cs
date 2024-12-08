@@ -115,6 +115,11 @@ namespace LAB10_lib
             base.Show();
             
         }
+        public void ShowNonVirtual()
+        {
+            Console.WriteLine("Название области: " + Name);
+            Console.WriteLine("Страна: " + Country);
+        }
         public override bool Equals(object obj)
         {
             // Вызов метода базового класса для общей логики

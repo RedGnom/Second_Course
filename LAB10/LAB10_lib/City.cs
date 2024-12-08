@@ -104,6 +104,13 @@ namespace LAB10_lib
             Console.WriteLine("Население: " + Population);
 
         }
+        public new void ShowNonVirtual()
+        {
+            Console.WriteLine("Название области: " + Name);
+            Console.WriteLine("Страна: " + Country);
+            Console.WriteLine("Город: " + CityName);
+            Console.WriteLine("Население: " + Population);
+        }
         public override bool Equals(object obj)
         {
             if (!base.Equals(obj)) { return false; }
