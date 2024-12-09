@@ -52,13 +52,57 @@ namespace LAB10_lib
         public virtual void RandomInit()
         {
             string[] randomCountry = new string[] {
-                "Россия",
-                "Мозамбик",
-                "Уганда"
-            };
+        "Россия",
+        "Мозамбик",
+        "Уганда",
+        "США",
+        "Канада",
+        "Китай",
+        "Индия",
+        "Германия",
+        "Франция",
+        "Япония",
+        "Австралия",
+        "Бразилия",
+        "Южная Африка",
+        "Мексика",
+        "Аргентина",
+        "Италия",
+        "Испания",
+        "Швеция",
+        "Норвегия",
+        "Финляндия",
+        "Нидерланды",
+        "Швейцария",
+        "Австрия",
+        "Чили",
+        "Колумбия",
+        "Перу",
+        "Греция",
+        "Турция",
+        "Израиль",
+        "Египет",
+        "Саудовская Аравия",
+        "Объединенные Арабские Эмираты",
+        "Сингапур",
+        "Малайзия",
+        "Таиланд",
+        "Вьетнам",
+        "Филиппины",
+        "Индонезия",
+        "Пакистан",
+        "Бангладеш",
+        "Нигерия",
+        "Кения",
+        "Гана",
+        "Марокко",
+        "Новая Зеландия",
+        "Южная Корея"
+    };
             Country = randomCountry[rnd.Next(randomCountry.Length)];
-            Name = "Место" + (rnd.Next(1,100)).ToString();
+            Name = "Место" + (rnd.Next(1, 100)).ToString();
         }
+
         public int CompareTo(Place other)
         {
             if (other == null) return 1;
@@ -68,12 +112,9 @@ namespace LAB10_lib
 
         public override bool Equals(object obj)
         {
-            if (obj == null || !(obj is Place other))
-            {
+            if (obj is not Place other)
                 return false;
-            }
 
-            // Сравнение свойств для Place
             return Country == other.Country && Name == other.Name;
         }
 
@@ -81,6 +122,7 @@ namespace LAB10_lib
         {
             return (Country, Name).GetHashCode();
         }
+
         public virtual Place ShallowCopy() //поверхностное копирование
         {
             return (Place)this.MemberwiseClone();

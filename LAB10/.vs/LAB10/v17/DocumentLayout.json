@@ -1,62 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "A:\\C#\\LAB10\\",
+  "WorkspaceRootPath": "E:\\C#\\Second_Course\\LAB10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|a:\\c#\\lab10\\lab10_lib\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|solutionrelative:lab10_lib\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|a:\\c#\\lab10\\lab10_lib\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|solutionrelative:lab10_lib\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D760A75C-85AE-4551-A577-EB665B2B037C}|LAB10\\LAB10.csproj|a:\\c#\\lab10\\lab10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D760A75C-85AE-4551-A577-EB665B2B037C}|LAB10\\LAB10.csproj|solutionrelative:lab10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|a:\\c#\\lab10\\lab10_lib\\comparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|solutionrelative:lab10_lib\\comparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|a:\\c#\\lab10\\lab10_lib\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|e:\\c#\\second_course\\lab10\\lab10_lib\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|solutionrelative:lab10_lib\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|a:\\c#\\lab10\\lab10_lib\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|solutionrelative:lab10_lib\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|e:\\c#\\second_course\\lab10\\lab10_lib\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|solutionrelative:lab10_lib\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|a:\\c#\\lab10\\lab10_lib\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|solutionrelative:lab10_lib\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+      "AbsoluteMoniker": "D:0:0:{D760A75C-85AE-4551-A577-EB665B2B037C}|LAB10\\LAB10.csproj|e:\\c#\\second_course\\lab10\\lab10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D760A75C-85AE-4551-A577-EB665B2B037C}|LAB10\\LAB10.csproj|solutionrelative:lab10\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E2A4D9A-2683-4BD7-8A15-349326542002}|Test10lib\\Test10lib.csproj|a:\\c#\\lab10\\test10lib\\regiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E2A4D9A-2683-4BD7-8A15-349326542002}|Test10lib\\Test10lib.csproj|solutionrelative:test10lib\\regiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E2A4D9A-2683-4BD7-8A15-349326542002}|Test10lib\\Test10lib.csproj|a:\\c#\\lab10\\test10lib\\vehicletests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E2A4D9A-2683-4BD7-8A15-349326542002}|Test10lib\\Test10lib.csproj|solutionrelative:test10lib\\vehicletests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E2A4D9A-2683-4BD7-8A15-349326542002}|Test10lib\\Test10lib.csproj|a:\\c#\\lab10\\test10lib\\adresstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E2A4D9A-2683-4BD7-8A15-349326542002}|Test10lib\\Test10lib.csproj|solutionrelative:test10lib\\adresstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|a:\\c#\\lab10\\lab10_lib\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|solutionrelative:lab10_lib\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E2A4D9A-2683-4BD7-8A15-349326542002}|Test10lib\\Test10lib.csproj|a:\\c#\\lab10\\test10lib\\megalopolistests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E2A4D9A-2683-4BD7-8A15-349326542002}|Test10lib\\Test10lib.csproj|solutionrelative:test10lib\\megalopolistests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|a:\\c#\\lab10\\lab10_lib\\megalopolis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|solutionrelative:lab10_lib\\megalopolis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E2A4D9A-2683-4BD7-8A15-349326542002}|Test10lib\\Test10lib.csproj|a:\\c#\\lab10\\test10lib\\citytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E2A4D9A-2683-4BD7-8A15-349326542002}|Test10lib\\Test10lib.csproj|solutionrelative:test10lib\\citytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|e:\\c#\\second_course\\lab10\\lab10_lib\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDB8955D-D07A-430B-B6E1-9BF095094B13}|LAB10_lib\\LAB10_lib.csproj|solutionrelative:lab10_lib\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,12 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -94,13 +50,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "City.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\LAB10_lib\\City.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\City.cs",
               "RelativeDocumentMoniker": "LAB10_lib\\City.cs",
-              "ToolTip": "A:\\C#\\LAB10\\LAB10_lib\\City.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\City.cs",
               "RelativeToolTip": "LAB10_lib\\City.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAtwGoAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCAAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T08:41:11.026Z",
               "EditorCaption": ""
@@ -109,161 +65,37 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\LAB10\\Program.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB10\\LAB10\\Program.cs",
               "RelativeDocumentMoniker": "LAB10\\Program.cs",
-              "ToolTip": "A:\\C#\\LAB10\\LAB10\\Program.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB10\\LAB10\\Program.cs",
               "RelativeToolTip": "LAB10\\Program.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAQwJcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:50:44.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Place.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\LAB10_lib\\Place.cs",
-              "RelativeDocumentMoniker": "LAB10_lib\\Place.cs",
-              "ToolTip": "A:\\C#\\LAB10\\LAB10_lib\\Place.cs",
-              "RelativeToolTip": "LAB10_lib\\Place.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwCcAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:51:25.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T16:50:44.886Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Comparer.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\LAB10_lib\\Comparer.cs",
-              "RelativeDocumentMoniker": "LAB10_lib\\Comparer.cs",
-              "ToolTip": "A:\\C#\\LAB10\\LAB10_lib\\Comparer.cs",
-              "RelativeToolTip": "LAB10_lib\\Comparer.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAwwAoAAAA6AAAAAAAAAA==",
+              "Title": "Place.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Place.cs",
+              "RelativeDocumentMoniker": "LAB10_lib\\Place.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Place.cs",
+              "RelativeToolTip": "LAB10_lib\\Place.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T16:25:46.994Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClassDiagram1.cd",
-              "DocumentMoniker": "A:\\C#\\LAB10\\LAB10_lib\\ClassDiagram1.cd",
-              "RelativeDocumentMoniker": "LAB10_lib\\ClassDiagram1.cd",
-              "ToolTip": "A:\\C#\\LAB10\\LAB10_lib\\ClassDiagram1.cd",
-              "RelativeToolTip": "LAB10_lib\\ClassDiagram1.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-11-29T08:04:50.275Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Vehicle.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\LAB10_lib\\Vehicle.cs",
-              "RelativeDocumentMoniker": "LAB10_lib\\Vehicle.cs",
-              "ToolTip": "A:\\C#\\LAB10\\LAB10_lib\\Vehicle.cs",
-              "RelativeToolTip": "LAB10_lib\\Vehicle.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAE4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-24T10:44:52.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T16:51:25.957Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Region.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\LAB10_lib\\Region.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Region.cs",
               "RelativeDocumentMoniker": "LAB10_lib\\Region.cs",
-              "ToolTip": "A:\\C#\\LAB10\\LAB10_lib\\Region.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Region.cs",
               "RelativeToolTip": "LAB10_lib\\Region.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T09:46:26.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegionTests.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\Test10lib\\RegionTests.cs",
-              "RelativeDocumentMoniker": "Test10lib\\RegionTests.cs",
-              "ToolTip": "A:\\C#\\LAB10\\Test10lib\\RegionTests.cs",
-              "RelativeToolTip": "Test10lib\\RegionTests.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAowBwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T16:05:25.986Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MegalopolisTests.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\Test10lib\\MegalopolisTests.cs",
-              "RelativeDocumentMoniker": "Test10lib\\MegalopolisTests.cs",
-              "ToolTip": "A:\\C#\\LAB10\\Test10lib\\MegalopolisTests.cs",
-              "RelativeToolTip": "Test10lib\\MegalopolisTests.cs",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAcwLoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T18:12:41.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Address.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\LAB10_lib\\Address.cs",
-              "RelativeDocumentMoniker": "LAB10_lib\\Address.cs",
-              "ToolTip": "A:\\C#\\LAB10\\LAB10_lib\\Address.cs",
-              "RelativeToolTip": "LAB10_lib\\Address.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T18:14:46.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AdressTests.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\Test10lib\\AdressTests.cs",
-              "RelativeDocumentMoniker": "Test10lib\\AdressTests.cs",
-              "ToolTip": "A:\\C#\\LAB10\\Test10lib\\AdressTests.cs",
-              "RelativeToolTip": "Test10lib\\AdressTests.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAwwMcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T18:16:23.078Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VehicleTests.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\Test10lib\\VehicleTests.cs",
-              "RelativeDocumentMoniker": "Test10lib\\VehicleTests.cs",
-              "ToolTip": "A:\\C#\\LAB10\\Test10lib\\VehicleTests.cs",
-              "RelativeToolTip": "Test10lib\\VehicleTests.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAqwHgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T18:27:19.22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Megalopolis.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\LAB10_lib\\Megalopolis.cs",
-              "RelativeDocumentMoniker": "LAB10_lib\\Megalopolis.cs",
-              "ToolTip": "A:\\C#\\LAB10\\LAB10_lib\\Megalopolis.cs",
-              "RelativeToolTip": "LAB10_lib\\Megalopolis.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T18:11:07.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CityTests.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\Test10lib\\CityTests.cs",
-              "RelativeDocumentMoniker": "Test10lib\\CityTests.cs",
-              "ToolTip": "A:\\C#\\LAB10\\Test10lib\\CityTests.cs",
-              "RelativeToolTip": "Test10lib\\CityTests.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAqwLYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T16:35:56.442Z"
+              "WhenOpened": "2024-11-29T09:46:26.757Z"
             }
           ]
         }

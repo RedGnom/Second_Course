@@ -10,6 +10,7 @@ namespace LAB10_lib
     {
         private int population;
         private string cityName = string.Empty;
+        private Region region;
         public int Population
         {
             get { return population; }
@@ -25,6 +26,16 @@ namespace LAB10_lib
                 }
             }
         }
+        public Region BaseRegion
+        {
+            get
+            {
+                return new Region(Country, Name);
+            }
+
+        }
+
+
         public string CityName { get { return cityName; } set { cityName = value; } }
         public  City(string country,string name,string cityName, int population): base(country, name){
             CityName = cityName;
@@ -40,6 +51,8 @@ namespace LAB10_lib
             CityName = other.CityName;
             Population = other.Population;
         }
+
+        
         public override void Init()
         {
             base.Init();
@@ -113,14 +126,27 @@ namespace LAB10_lib
         }
         public override bool Equals(object obj)
         {
-            if (!base.Equals(obj)) { return false; }
-            City other = (City)obj;
-            return Population == other.Population;
+            if (!base.Equals(obj))
+                return false;
+
+            if (obj is not City other)
+                return false;
+
+            return Population == other.Population && CityName == other.CityName;
         }
+
         public override int GetHashCode()
         {
-            return base.GetHashCode();
+            return (Country, Name, Population, CityName).GetHashCode();
         }
+        public override string ToString()
+        {
+            return $"{base.ToString()}-{CityName}-{Population}";
+        }
+
+
+
+
         public override Place ShallowCopy()
         {
             return (City)this.MemberwiseClone();

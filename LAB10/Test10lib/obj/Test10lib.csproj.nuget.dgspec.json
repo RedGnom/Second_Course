@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "A:\\C#\\LAB10\\Test10lib\\Test10lib.csproj": {}
+    "E:\\C#\\Second_Course\\LAB10\\Test10lib\\Test10lib.csproj": {}
   },
   "projects": {
-    "A:\\C#\\LAB10\\LAB10\\LAB10.csproj": {
+    "E:\\C#\\Second_Course\\LAB10\\LAB10\\LAB10.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\C#\\LAB10\\LAB10\\LAB10.csproj",
+        "projectUniqueName": "E:\\C#\\Second_Course\\LAB10\\LAB10\\LAB10.csproj",
         "projectName": "LAB10",
-        "projectPath": "A:\\C#\\LAB10\\LAB10\\LAB10.csproj",
-        "packagesPath": "C:\\Users\\redgn\\.nuget\\packages\\",
-        "outputPath": "A:\\C#\\LAB10\\LAB10\\obj\\",
+        "projectPath": "E:\\C#\\Second_Course\\LAB10\\LAB10\\LAB10.csproj",
+        "packagesPath": "C:\\Users\\Рустам\\.nuget\\packages\\",
+        "outputPath": "E:\\C#\\Second_Course\\LAB10\\LAB10\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\redgn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Рустам\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
-                "projectPath": "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj"
+              "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
+                "projectPath": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj"
               }
             }
           }
@@ -64,21 +64,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
+    "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj",
+        "projectUniqueName": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj",
         "projectName": "LAB10_lib",
-        "projectPath": "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj",
-        "packagesPath": "C:\\Users\\redgn\\.nuget\\packages\\",
-        "outputPath": "A:\\C#\\LAB10\\LAB10_lib\\obj\\",
+        "projectPath": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj",
+        "packagesPath": "C:\\Users\\Рустам\\.nuget\\packages\\",
+        "outputPath": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\redgn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Рустам\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -124,21 +124,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "A:\\C#\\LAB10\\Test10lib\\Test10lib.csproj": {
+    "E:\\C#\\Second_Course\\LAB10\\Test10lib\\Test10lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\C#\\LAB10\\Test10lib\\Test10lib.csproj",
+        "projectUniqueName": "E:\\C#\\Second_Course\\LAB10\\Test10lib\\Test10lib.csproj",
         "projectName": "Test10lib",
-        "projectPath": "A:\\C#\\LAB10\\Test10lib\\Test10lib.csproj",
-        "packagesPath": "C:\\Users\\redgn\\.nuget\\packages\\",
-        "outputPath": "A:\\C#\\LAB10\\Test10lib\\obj\\",
+        "projectPath": "E:\\C#\\Second_Course\\LAB10\\Test10lib\\Test10lib.csproj",
+        "packagesPath": "C:\\Users\\Рустам\\.nuget\\packages\\",
+        "outputPath": "E:\\C#\\Second_Course\\LAB10\\Test10lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\redgn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Рустам\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -152,11 +152,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "A:\\C#\\LAB10\\LAB10\\LAB10.csproj": {
-                "projectPath": "A:\\C#\\LAB10\\LAB10\\LAB10.csproj"
+              "E:\\C#\\Second_Course\\LAB10\\LAB10\\LAB10.csproj": {
+                "projectPath": "E:\\C#\\Second_Course\\LAB10\\LAB10\\LAB10.csproj"
               },
-              "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
-                "projectPath": "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj"
+              "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
+                "projectPath": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj"
               }
             }
           }
@@ -209,7 +209,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
