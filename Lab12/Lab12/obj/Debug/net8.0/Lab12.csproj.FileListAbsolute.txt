@@ -1,0 +1,6 @@
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.csproj.AssemblyReference.cache
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.AssemblyInfoInputs.cache
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.AssemblyInfo.cs
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.csproj.CoreCompileInputs.cache
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.sourcelink.json
