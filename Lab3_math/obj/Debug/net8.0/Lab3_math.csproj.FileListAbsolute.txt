@@ -1,0 +1,15 @@
+A:\C#\Lab3_math\bin\Debug\net8.0\Lab3_math.exe
+A:\C#\Lab3_math\bin\Debug\net8.0\Lab3_math.deps.json
+A:\C#\Lab3_math\bin\Debug\net8.0\Lab3_math.runtimeconfig.json
+A:\C#\Lab3_math\bin\Debug\net8.0\Lab3_math.dll
+A:\C#\Lab3_math\bin\Debug\net8.0\Lab3_math.pdb
+A:\C#\Lab3_math\obj\Debug\net8.0\Lab3_math.GeneratedMSBuildEditorConfig.editorconfig
+A:\C#\Lab3_math\obj\Debug\net8.0\Lab3_math.AssemblyInfoInputs.cache
+A:\C#\Lab3_math\obj\Debug\net8.0\Lab3_math.AssemblyInfo.cs
+A:\C#\Lab3_math\obj\Debug\net8.0\Lab3_math.csproj.CoreCompileInputs.cache
+A:\C#\Lab3_math\obj\Debug\net8.0\Lab3_math.sourcelink.json
+A:\C#\Lab3_math\obj\Debug\net8.0\Lab3_math.dll
+A:\C#\Lab3_math\obj\Debug\net8.0\refint\Lab3_math.dll
+A:\C#\Lab3_math\obj\Debug\net8.0\Lab3_math.pdb
+A:\C#\Lab3_math\obj\Debug\net8.0\Lab3_math.genruntimeconfig.cache
+A:\C#\Lab3_math\obj\Debug\net8.0\ref\Lab3_math.dll
