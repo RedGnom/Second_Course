@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab12
 {
-    public class Node<T>
+    internal class Node<T>
     {
         T value;
         Node<T> left;
@@ -25,7 +25,7 @@ namespace Lab12
 
         public Node(T value, Node<T> left = default, Node<T> right = default)
         {
-            T Value = value;
+            Value = value;
             Left = left;
             Right = right;
         }

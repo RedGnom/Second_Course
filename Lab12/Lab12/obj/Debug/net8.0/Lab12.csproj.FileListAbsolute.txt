@@ -4,3 +4,16 @@ E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.AssemblyInfoInputs.cache
 E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.AssemblyInfo.cs
 E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.csproj.CoreCompileInputs.cache
 E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.sourcelink.json
+E:\C#\Second_Course\Lab12\Lab12\bin\Debug\net8.0\Lab12.exe
+E:\C#\Second_Course\Lab12\Lab12\bin\Debug\net8.0\Lab12.deps.json
+E:\C#\Second_Course\Lab12\Lab12\bin\Debug\net8.0\Lab12.runtimeconfig.json
+E:\C#\Second_Course\Lab12\Lab12\bin\Debug\net8.0\Lab12.dll
+E:\C#\Second_Course\Lab12\Lab12\bin\Debug\net8.0\Lab12.pdb
+E:\C#\Second_Course\Lab12\Lab12\bin\Debug\net8.0\LAB10_lib.dll
+E:\C#\Second_Course\Lab12\Lab12\bin\Debug\net8.0\LAB10_lib.pdb
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.csproj.Up2Date
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.dll
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\refint\Lab12.dll
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.pdb
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\Lab12.genruntimeconfig.cache
+E:\C#\Second_Course\Lab12\Lab12\obj\Debug\net8.0\ref\Lab12.dll
