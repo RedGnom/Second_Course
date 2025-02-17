@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab3_math")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a34093518b590936e8322de391d9936b0b1150b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c80df428cf664b7fec707ca9ca28b0eb11f1c4b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab3_math")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab3_math")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

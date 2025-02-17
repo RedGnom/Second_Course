@@ -6,6 +6,7 @@ namespace Lab3_math
     internal class Program
     {
         private static Random random = new Random();
+        static Dictionary<int, char> dict = new Dictionary<int, char>();
         static void ShowMatrix(int[,] arr, Dictionary<int, char> dict)
         {
             NormalizeMatrix(arr);
@@ -99,17 +100,19 @@ namespace Lab3_math
             }
             return res;
         }
-        static int[,] ReachMatrix(int[,] sum, int[,] matrix, int[,] current)
+        static int[,] ReachMatrix(int[,] sum, int[,] matrix, int[,] current, Dictionary<int, char> dict)
         {
             ZeroMatrix(sum);
             sum = MatrixSum(sum, matrix);
-            //ShowMatrix(sum);
+            Console.WriteLine("Первая матрица");
+            ShowMatrix(sum, dict);
 
             for (int i = 0; i < matrix.GetLength(0) - 1; i++)
             {
                 current = MatrixMultiplie(current, matrix);
                 sum = MatrixSum(current, sum);
-                //ShowMatrix(sum);
+                Console.WriteLine($"Матрица номер {i+2} ");
+                ShowMatrix(sum, dict);
             }
             return sum;
         }
@@ -224,7 +227,7 @@ namespace Lab3_math
 
         static void Main(string[] args)
         {
-            Dictionary<int, char> dict = new Dictionary<int, char>();
+            
             FillDict(dict); //Заполнение словаря с набором букв
 
             int[][,] matrixSet =
@@ -295,8 +298,9 @@ namespace Lab3_math
                 Console.WriteLine("Матрица смежности");
                 ShowMatrix(matrix, dict);
 
+                
+                sum = ReachMatrix(sum, matrix, current, dict);
                 Console.WriteLine("Матрица достижимости");
-                sum = ReachMatrix(sum, matrix, current);
                 ShowMatrix(sum, dict);
 
                 strongMatrix = StrongMatrix(sum);
