@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab12
 {
-    internal class Node<T>
+    public class Node<T>
     {
         T value;
         Node<T> left;

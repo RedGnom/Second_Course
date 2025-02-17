@@ -10,22 +10,34 @@ namespace Lab12
 {
     public class BinaryTree<T> : ICollection<T>, IEnumerable<T>, ICloneable
     {
-        Node<T> root;
+        private Node<T> root;
         int count;
         private  IComparer<T> comparer;
-        public int Count { get; private set; }
+        public int Count
+        {
+            get { return count; } 
+            private set { count = value; }
+        }
+
+
+        public Node<T> Root
+        {
+            get { return root; }
+            private set { root = value; }
+        }
+
         public bool IsReadOnly => false;
         public BinaryTree() {
-            comparer = comparer ?? Comparer<T>.Default;
+            comparer = new LAB10_lib.Comparer() as IComparer<T>;
             root = null;
             count = 0;
         }
         public BinaryTree(BinaryTree<T> tree)
         {
-            comparer = comparer ?? Comparer<T>.Default;
+            comparer = new LAB10_lib.Comparer() as IComparer<T>;
             root = null;
             count = tree.Count;
-            foreach (var item in tree.TraverseInOrder())
+            foreach (var item in tree.TraversePreOrder())
             {
                 this.Add(item);
             }
@@ -36,33 +48,46 @@ namespace Lab12
         }
         public IEnumerator<T> GetEnumerator()
         {
-            return TraverseInOrder().GetEnumerator();
+            return TraversePreOrder().GetEnumerator();
+            
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
-        private IEnumerable<T> TraverseInOrder()
+        private IEnumerable<T> TraversePreOrder()
         {
-            Stack<Node<T>> stack = new Stack<Node<T>>();
-            Node<T> current = root;
-
-            while (stack.Count > 0 || current != null)
+            if (root == null)
             {
-                if (current != null)
-                {
-                    stack.Push(current);
-                    current = current.Left;
-                }
-                else
-                {
-                    current = stack.Pop();
-                    yield return current.Value;
-                    current = current.Right;
-                }
+                yield break;
+            }
+
+            var enumerator = new Numerator<T>(root);
+            while (enumerator.MoveNext())
+            {
+                yield return enumerator.Current;
             }
         }
+
+        //private IEnumerable<T> TraversePreOrder()
+        //{
+
+        //    //if (root == null) yield break;
+
+        //    //Stack<Node<T>> stack = new Stack<Node<T>>();
+        //    //stack.Push(root);
+
+        //    //while (stack.Count > 0)
+        //    //{
+        //    //    Node<T> current = stack.Pop();
+        //    //    yield return current.Value; 
+
+        //    //    if (current.Right != null) stack.Push(current.Right); 
+        //    //    if (current.Left != null) stack.Push(current.Left);  
+        //    //}
+        //}
+
 
         public void Add(T item)
         {
@@ -111,7 +136,7 @@ namespace Lab12
                 throw new ArgumentException("Недостаточно места в массиве");
 
             int index = arrayIndex;
-            foreach (var item in TraverseInOrder())
+            foreach (var item in TraversePreOrder())
             {
                 array[index++] = item;
             }
@@ -170,71 +195,64 @@ namespace Lab12
         }
 
 
-        private class Numerator<T>: IEnumerator<T>
+        private class Numerator<T> : IEnumerator<T>
         {
-            Node<T> begin;
-            Node<T> current;
-            Stack<Node<T>> DFS;
+            private Node<T> root;
+            private Stack<Node<T>> stack;
+            private Node<T> current;
 
             public Numerator(Node<T> root)
             {
-                begin = root;
-                current = begin;
-                DFS = new Stack<Node<T>>();
+                this.root = root;
+                stack = new Stack<Node<T>>();
+                Reset();
             }
+
             public T Current
-            {
-                get { return current.Value; }
-            }
-            object IEnumerator.Current
             {
                 get
                 {
-                    return Current;
+                    if (current == null)
+                        throw new InvalidOperationException("Нумератор не на корне или достиг конца.");
+                    return current.Value;
                 }
             }
+
+            object IEnumerator.Current => Current;
+
             public bool MoveNext()
             {
-                if (current == null && DFS.Count == 0)
-                {
+                if (stack.Count == 0)
                     return false;
-                }
-                if (current != null)
+
+                current = stack.Pop();
+
+                if (current.Right != null)
                 {
-                    DFS.Push(current);
-                    current = null;
+                    stack.Push(current.Right);
                 }
-
-                if (DFS.Count > 0)
+                if (current.Left != null)
                 {
-                    current = DFS.Pop();
-
-                    if (current.Right != null)
-                    {
-                        DFS.Push(current.Right);
-                    }
-                    if (current.Left != null)
-                    {
-                        current = current.Left;
-                    }
-                    else
-                    {
-                        current = null;
-                    }
-
-                    return true;
+                    stack.Push(current.Left);
                 }
 
-                return false;
+                return true;
+            }
+
+            public void Reset()
+            {
+                stack.Clear();
+                current = null;
+                if (root != null)
+                {
+                    stack.Push(root);
+                }
             }
 
             public void Dispose() { }
-            public void Reset()
-            {
-                DFS.Clear();
-                current = begin;
-            }
-
         }
+
+
+
     }
 }
