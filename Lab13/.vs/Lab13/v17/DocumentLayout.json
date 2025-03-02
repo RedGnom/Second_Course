@@ -1,0 +1,145 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "A:\\C#\\Lab13\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D477514-65BD-4187-AA72-360870A1384E}|Lab13.csproj|a:\\c#\\lab13\\treeevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D477514-65BD-4187-AA72-360870A1384E}|Lab13.csproj|solutionrelative:treeevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26C7E536-A6F8-4D15-8415-0D4077D40D09}|..\\Lab12\\Lab12\\Lab12.csproj|a:\\c#\\lab12\\lab12\\binarytree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D477514-65BD-4187-AA72-360870A1384E}|Lab13.csproj|a:\\c#\\lab13\\journal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D477514-65BD-4187-AA72-360870A1384E}|Lab13.csproj|solutionrelative:journal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D477514-65BD-4187-AA72-360870A1384E}|Lab13.csproj|a:\\c#\\lab13\\journalentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D477514-65BD-4187-AA72-360870A1384E}|Lab13.csproj|solutionrelative:journalentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D477514-65BD-4187-AA72-360870A1384E}|Lab13.csproj|a:\\c#\\lab13\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D477514-65BD-4187-AA72-360870A1384E}|Lab13.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325D658A-506C-464F-814E-D0EA694357F6}|..\\TestLab13\\TestLab13.csproj|a:\\c#\\testlab13\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 207,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Journal.cs",
+              "DocumentMoniker": "A:\\C#\\Lab13\\Journal.cs",
+              "RelativeDocumentMoniker": "Journal.cs",
+              "ToolTip": "A:\\C#\\Lab13\\Journal.cs",
+              "RelativeToolTip": "Journal.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T08:36:54.248Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "A:\\C#\\TestLab13\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\TestLab13\\UnitTest1.cs",
+              "ToolTip": "A:\\C#\\TestLab13\\UnitTest1.cs",
+              "RelativeToolTip": "..\\TestLab13\\UnitTest1.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAowMkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T05:40:17.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BinaryTree.cs",
+              "DocumentMoniker": "A:\\C#\\Lab12\\Lab12\\BinaryTree.cs",
+              "RelativeDocumentMoniker": "..\\Lab12\\Lab12\\BinaryTree.cs",
+              "ToolTip": "A:\\C#\\Lab12\\Lab12\\BinaryTree.cs",
+              "RelativeToolTip": "..\\Lab12\\Lab12\\BinaryTree.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T04:47:27.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JournalEntry.cs",
+              "DocumentMoniker": "A:\\C#\\Lab13\\JournalEntry.cs",
+              "RelativeDocumentMoniker": "JournalEntry.cs",
+              "ToolTip": "A:\\C#\\Lab13\\JournalEntry.cs",
+              "RelativeToolTip": "JournalEntry.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T15:09:27.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TreeEvent.cs",
+              "DocumentMoniker": "A:\\C#\\Lab13\\TreeEvent.cs",
+              "RelativeDocumentMoniker": "TreeEvent.cs",
+              "ToolTip": "A:\\C#\\Lab13\\TreeEvent.cs",
+              "RelativeToolTip": "TreeEvent.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T05:48:54.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "A:\\C#\\Lab13\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "A:\\C#\\Lab13\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T04:47:15.294Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
