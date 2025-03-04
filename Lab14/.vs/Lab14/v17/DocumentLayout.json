@@ -1,13 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "A:\\C#\\Lab14\\",
+  "WorkspaceRootPath": "E:\\C#\\Second_Course\\Lab14\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00CA41A2-A727-44F5-90A7-43D81AE7776A}|Lab14.csproj|a:\\c#\\lab14\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{00CA41A2-A727-44F5-90A7-43D81AE7776A}|Lab14.csproj|e:\\c#\\second_course\\lab14\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00CA41A2-A727-44F5-90A7-43D81AE7776A}|Lab14.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8993717C-4899-48CD-A9F7-34A3372A52E6}|..\\LAB10\\LAB10_lib\\LAB10_lib.csproj|a:\\c#\\lab10\\lab10_lib\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{00CA41A2-A727-44F5-90A7-43D81AE7776A}|Lab14.csproj|e:\\c#\\second_course\\lab14\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00CA41A2-A727-44F5-90A7-43D81AE7776A}|Lab14.csproj|solutionrelative:extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8993717C-4899-48CD-A9F7-34A3372A52E6}|..\\LAB10\\LAB10_lib\\LAB10_lib.csproj|e:\\c#\\second_course\\lab10\\lab10_lib\\comparer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8993717C-4899-48CD-A9F7-34A3372A52E6}|..\\LAB10\\LAB10_lib\\LAB10_lib.csproj|e:\\c#\\second_course\\lab10\\lab10_lib\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8993717C-4899-48CD-A9F7-34A3372A52E6}|..\\LAB10\\LAB10_lib\\LAB10_lib.csproj|e:\\c#\\second_course\\lab10\\lab10_lib\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8993717C-4899-48CD-A9F7-34A3372A52E6}|..\\LAB10\\LAB10_lib\\LAB10_lib.csproj|e:\\c#\\second_course\\lab10\\lab10_lib\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -40,31 +53,79 @@
               "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Comparer.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Comparer.cs",
+              "RelativeDocumentMoniker": "..\\LAB10\\LAB10_lib\\Comparer.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Comparer.cs",
+              "RelativeToolTip": "..\\LAB10\\LAB10_lib\\Comparer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T17:38:32.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "City.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\City.cs",
+              "RelativeDocumentMoniker": "..\\LAB10\\LAB10_lib\\City.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\City.cs",
+              "RelativeToolTip": "..\\LAB10\\LAB10_lib\\City.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwHoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T15:00:24.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Region.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Region.cs",
+              "RelativeDocumentMoniker": "..\\LAB10\\LAB10_lib\\Region.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Region.cs",
+              "RelativeToolTip": "..\\LAB10\\LAB10_lib\\Region.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAEwKAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T14:59:36.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Place.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Place.cs",
+              "RelativeDocumentMoniker": "..\\LAB10\\LAB10_lib\\Place.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Place.cs",
+              "RelativeToolTip": "..\\LAB10\\LAB10_lib\\Place.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAiwHIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T14:19:01.305Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "City.cs",
-              "DocumentMoniker": "A:\\C#\\LAB10\\LAB10_lib\\City.cs",
-              "RelativeDocumentMoniker": "..\\LAB10\\LAB10_lib\\City.cs",
-              "ToolTip": "A:\\C#\\LAB10\\LAB10_lib\\City.cs",
-              "RelativeToolTip": "..\\LAB10\\LAB10_lib\\City.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwC8AAAAJAAAAAAAAAA==",
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\Lab14\\Extensions.cs",
+              "RelativeDocumentMoniker": "Extensions.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\Lab14\\Extensions.cs",
+              "RelativeToolTip": "Extensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T08:59:21.509Z",
+              "WhenOpened": "2025-03-04T14:03:54.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "A:\\C#\\Lab14\\Program.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\Lab14\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "A:\\C#\\Lab14\\Program.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\Lab14\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAYwBUAAABmAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T08:25:31.46Z",
               "EditorCaption": ""

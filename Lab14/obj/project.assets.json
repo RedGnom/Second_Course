@@ -46,19 +46,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\redgn\\.nuget\\packages\\": {}
+    "C:\\Users\\Рустам\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\C#\\Lab14\\Lab14.csproj",
+      "projectUniqueName": "E:\\C#\\Second_Course\\Lab14\\Lab14.csproj",
       "projectName": "Lab14",
-      "projectPath": "A:\\C#\\Lab14\\Lab14.csproj",
-      "packagesPath": "C:\\Users\\redgn\\.nuget\\packages\\",
-      "outputPath": "A:\\C#\\Lab14\\obj\\",
+      "projectPath": "E:\\C#\\Second_Course\\Lab14\\Lab14.csproj",
+      "packagesPath": "C:\\Users\\Рустам\\.nuget\\packages\\",
+      "outputPath": "E:\\C#\\Second_Course\\Lab14\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\redgn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Рустам\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -72,11 +72,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
-              "projectPath": "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj"
+            "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
+              "projectPath": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj"
             },
-            "A:\\C#\\Lab12\\Lab12\\Lab12.csproj": {
-              "projectPath": "A:\\C#\\Lab12\\Lab12\\Lab12.csproj"
+            "E:\\C#\\Second_Course\\Lab12\\Lab12\\Lab12.csproj": {
+              "projectPath": "E:\\C#\\Second_Course\\Lab12\\Lab12\\Lab12.csproj"
             }
           }
         }
@@ -111,7 +111,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
