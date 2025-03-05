@@ -12,10 +12,13 @@ namespace Lab14
     {
         public static IEnumerable<City> GetCitiesByCountry(this List<SortedDictionary<Region, City>> list, string country)
         {
-           
-
             return list.SelectMany(dict => dict.Values) 
                        .Where(city => city.Country == country);
+        }
+        public static IEnumerable<City> GetCitiesMoreThan(this List<SortedDictionary<Region, City>> list, int population)
+        {
+            return list.SelectMany(dict => dict.Values)
+                       .Where(city => city.Population > population);
         }
         public static int GetMaxPopulation(this List<SortedDictionary<Region, City>> list)
         {
@@ -27,6 +30,14 @@ namespace Lab14
             return list.SelectMany(dict => dict.Values)
                 .GroupBy(city => city.Country);
         }
+
+        public static IEnumerable<City> GetCitiesByCondition(this BinaryTree<City> tree, Func<City, bool> condition)
+        {
+            
+            return tree
+                .Where(city => condition(city));  
+        }
+
 
 
     }

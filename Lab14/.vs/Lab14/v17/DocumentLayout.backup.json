@@ -1,14 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "A:\\C#\\Lab14\\",
+  "WorkspaceRootPath": "E:\\C#\\Second_Course\\Lab14\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00CA41A2-A727-44F5-90A7-43D81AE7776A}|Lab14.csproj|a:\\c#\\lab14\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{00CA41A2-A727-44F5-90A7-43D81AE7776A}|Lab14.csproj|e:\\c#\\second_course\\lab14\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00CA41A2-A727-44F5-90A7-43D81AE7776A}|Lab14.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00CA41A2-A727-44F5-90A7-43D81AE7776A}|Lab14.csproj|a:\\c#\\lab14\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{00CA41A2-A727-44F5-90A7-43D81AE7776A}|Lab14.csproj|e:\\c#\\second_course\\lab14\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{00CA41A2-A727-44F5-90A7-43D81AE7776A}|Lab14.csproj|solutionrelative:extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6E79B7-EF5B-4697-8782-901C4FFC03F4}|..\\Lab12\\Lab12\\Lab12.csproj|e:\\c#\\second_course\\lab12\\lab12\\binarytree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB6E79B7-EF5B-4697-8782-901C4FFC03F4}|..\\Lab12\\Lab12\\Lab12.csproj|e:\\c#\\second_course\\lab12\\lab12\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +24,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,18 +47,40 @@
               "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BinaryTree.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\Lab12\\Lab12\\BinaryTree.cs",
+              "RelativeDocumentMoniker": "..\\Lab12\\Lab12\\BinaryTree.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\Lab12\\Lab12\\BinaryTree.cs",
+              "RelativeToolTip": "..\\Lab12\\Lab12\\BinaryTree.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T20:36:53.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\Lab12\\Lab12\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Lab12\\Lab12\\Program.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\Lab12\\Lab12\\Program.cs",
+              "RelativeToolTip": "..\\Lab12\\Lab12\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T20:06:23.158Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Extensions.cs",
-              "DocumentMoniker": "A:\\C#\\Lab14\\Extensions.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\Lab14\\Extensions.cs",
               "RelativeDocumentMoniker": "Extensions.cs",
-              "ToolTip": "A:\\C#\\Lab14\\Extensions.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\Lab14\\Extensions.cs",
               "RelativeToolTip": "Extensions.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBgAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwCMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T14:03:54.07Z",
               "EditorCaption": ""
@@ -61,11 +89,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "A:\\C#\\Lab14\\Program.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\Lab14\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "A:\\C#\\Lab14\\Program.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\Lab14\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAgwEUAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAWwLkAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-03T08:25:31.46Z",
               "EditorCaption": ""
