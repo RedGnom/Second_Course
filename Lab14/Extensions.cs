@@ -12,12 +12,22 @@ namespace Lab14
     {
         public static IEnumerable<City> GetCitiesByCountry(this List<SortedDictionary<Region, City>> list, string country)
         {
-            if (list == null) throw new ArgumentNullException(nameof(list));
-            if (string.IsNullOrEmpty(country)) throw new ArgumentException("Country cannot be null or empty", nameof(country));
+           
 
             return list.SelectMany(dict => dict.Values) 
                        .Where(city => city.Country == country);
         }
+        public static int GetMaxPopulation(this List<SortedDictionary<Region, City>> list)
+        {
+            return list.Max(dict => dict.Values.Max(city => city.Population));
+
+        }
+        public static IEnumerable<IGrouping<string, City>> GroupByCountry(this List<SortedDictionary<Region, City>> list)
+        {
+            return list.SelectMany(dict => dict.Values)
+                .GroupBy(city => city.Country);
+        }
+
 
     }
 }
