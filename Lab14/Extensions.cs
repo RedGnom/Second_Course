@@ -10,26 +10,31 @@ namespace Lab14
 {
     static public class Extensions
     {
-        public static IEnumerable<City> GetCitiesByCountry(this List<SortedDictionary<Region, City>> list, string country)
-        {
-            return list.SelectMany(dict => dict.Values) 
-                       .Where(city => city.Country == country);
-        }
-        public static IEnumerable<City> GetCitiesMoreThan(this List<SortedDictionary<Region, City>> list, int population)
+        public static IEnumerable<City> Where(this List<SortedDictionary<Region, City>> list, Func<City, bool> predicate)
         {
             return list.SelectMany(dict => dict.Values)
-                       .Where(city => city.Population > population);
+                       .Where(predicate);
         }
-        public static int GetMaxPopulation(this List<SortedDictionary<Region, City>> list)
-        {
-            return list.Max(dict => dict.Values.Max(city => city.Population));
 
+        public static int AggregatePopulation(this List<SortedDictionary<Region, City>> list, Func<IEnumerable<int>, int> aggregationFunc)
+        {
+            return aggregationFunc(list.SelectMany(dict => dict.Values).Select(city => city.Population));
         }
-        public static IEnumerable<IGrouping<string, City>> GroupByCountry(this List<SortedDictionary<Region, City>> list)
+
+
+        public static IEnumerable<IGrouping<TKey, City>> GroupByCondition<TKey>(this List<SortedDictionary<Region, City>> list,
+        Func<City, TKey> keySelector)
         {
             return list.SelectMany(dict => dict.Values)
-                .GroupBy(city => city.Country);
+                       .GroupBy(keySelector);
         }
+
+        public static List<T> UnionWith<T>(this List<T> firstList, List<T> secondList,
+        Func<IEnumerable<T>, IEnumerable<T>, IEnumerable<T>> unionFunc) 
+            {
+                return unionFunc(firstList, secondList).ToList(); 
+            }
+
 
         public static IEnumerable<T> Where<T>(this BinaryTree<T> collection, Func<T, bool> predicate)
         {
@@ -42,25 +47,36 @@ namespace Lab14
             }
         }
 
-        public static TResult Aggregate<T, TResult>(this BinaryTree<T> collection, TResult seed, Func<TResult, T, TResult> func) 
+        
+        public static TResult AggregateData<T, TResult>(this IEnumerable<T> collection, Func<T, TResult> selector, Func<TResult, TResult, TResult> aggregator)
         {
-            TResult result = seed;
+            TResult result = default(TResult);
+
             foreach (var item in collection)
             {
-                result = func(result, item);
+                var value = selector(item);
+                result = aggregator(result, value);
             }
+
             return result;
         }
 
-        public static int Sum<T>(this IEnumerable<T> collection, Func<T, int> selector)
+        
+        public static IEnumerable<T> SortBy<T, TKey>(this IEnumerable<T> collection, Func<T, TKey> keySelector, bool ascending = true)
+            where TKey : IComparable<TKey>
         {
-            int sum = 0;
-            foreach (var item in collection)
-            {
-                sum += selector(item);
-            }
-            return sum;
+            return ascending ? collection.OrderBy(keySelector) : collection.OrderByDescending(keySelector);
         }
+
+        //public static int Sum<T>(this IEnumerable<T> collection, Func<T, int> selector)
+        //{
+        //    int sum = 0;
+        //    foreach (var item in collection)
+        //    {
+        //        sum += selector(item);
+        //    }
+        //    return sum;
+        //}
 
 
 

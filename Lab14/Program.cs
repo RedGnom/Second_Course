@@ -8,10 +8,10 @@ namespace Lab14
     {
         static void Main(string[] args)
         {
-            //            IComparer<Place> placeComparer = new Comparer();
+            //IComparer<Place> placeComparer = new Comparer();
 
 
-            //            List<SortedDictionary<Region, City>> listOfCountries = new List<SortedDictionary<Region, City>>
+            //List<SortedDictionary<Region, City>> listOfCountries = new List<SortedDictionary<Region, City>>
             //            {
             //                new SortedDictionary<Region, City>(placeComparer)
             //                {
@@ -39,7 +39,7 @@ namespace Lab14
             //                    { new Region("Япония", "Осака"), new City("Япония", "Осака", "Осака", 2735146) }
             //                }
             //            };
-            //            List<SortedDictionary<Region, City>> anotherListOfCountries = new List<SortedDictionary<Region, City>>
+            //List<SortedDictionary<Region, City>> anotherListOfCountries = new List<SortedDictionary<Region, City>>
             //{
             //    new SortedDictionary<Region, City>(placeComparer)
             //    {
@@ -66,97 +66,96 @@ namespace Lab14
             //        { new Region("Китай", "Пекин"), new City("Китай", "Пекин", "Пекин", 21540000) }
             //    }
             //};
-            //            Console.WriteLine("Запросы на выборку по стране");
-            //            Console.WriteLine("Методы расширения");
-            //            var Cities = listOfCountries.GetCitiesByCountry("Россия");
-            //            foreach (var city in Cities)
-            //            {
-            //                city.Show();
-            //            }
-            //            Console.WriteLine();
-            //            Console.WriteLine("Linq запрос");
-            //            var CitiesLinq = from country in listOfCountries
-            //                             from city in country.Values
-            //                             where city.Country == "Россия"
-            //                             select city;
+            //Console.WriteLine("Запросы на выборку по стране");
+            //Console.WriteLine("Методы расширения");
+            //var Cities = listOfCountries.Where(city=>city.Country=="Россия");
+            //foreach (var city in Cities)
+            //{
+            //    city.Show();
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("Linq запрос");
+            //var CitiesLinq = from country in listOfCountries
+            //                 from city in country.Values
+            //                 where city.Country == "Россия"
+            //                 select city;
 
-            //            foreach (var city in CitiesLinq)
-            //            {
-            //                city.Show();
-            //            }
+            //foreach (var city in CitiesLinq)
+            //{
+            //    city.Show();
+            //}
 
-            //            Console.WriteLine("Запросы на получение максимального населения");
+            //Console.WriteLine("Запросы на получение максимального населения");
 
-            //            var maxAge = listOfCountries.GetMaxPopulation();
-            //            Console.WriteLine($"Максимальное население через расширение {maxAge}");
+            //var maxAge = listOfCountries.AggregatePopulation(population => population.Max());
+            //Console.WriteLine($"Максимальное население через расширение {maxAge}");
 
-            //            var maxAgeLinq = (from country in listOfCountries
-            //                              from city in country.Values
-            //                              select city.Population).Max();
-            //            Console.WriteLine($"Максимальное население через Linq {maxAgeLinq}" );
-            //            Console.WriteLine("\n\n\n");
-
-
-            //            Console.WriteLine("Города с населением больше 5000000");
-            //            var moreThanCities = listOfCountries.GetCitiesMoreThan(5000000);
-            //            var moreThanCitiesLinq = from country in listOfCountries
-            //                                     from cities in country.Values
-            //                                     where cities.Population > 5000000
-            //                                     select cities;
-            //            Console.WriteLine("Метод расширения");
-            //            foreach (var city in moreThanCities)
-            //            {
-            //                city.Show();
-            //            }
-            //            Console.WriteLine("Linq");
-            //            foreach(var city in moreThanCitiesLinq)
-            //            {
-            //                city.Show();
-            //            }
-            //            Console.WriteLine("\n\n\n");
-
-            //            Console.WriteLine("Запросы на группировку");
-            //            var groupOfCountries = listOfCountries.GroupByCountry();
-            //            foreach (var country in groupOfCountries)
-            //            {
-            //                Console.WriteLine(country.Key);
-            //                foreach (var city in country)
-            //                {
-            //                    city.Show();
-            //                }
-            //            }
-            //            Console.WriteLine("\n\n\n");
-            //            var groupOfCountriesLinq = from country in listOfCountries
-            //                                       from city in country.Values
-            //                                       group city by city.Country;
-            //            foreach(var country in groupOfCountriesLinq)
-            //            {
-            //                Console.WriteLine(country.Key);
-            //                foreach (var city in country)
-            //                {
-            //                    city.Show();
-            //                }
-            //            }
-            //            Console.WriteLine("\n\n\n");
-            //            var combinedList = listOfCountries.Union(anotherListOfCountries).ToList();
-            //            Console.WriteLine($"Найдем максимальный город после объединения двух листов расширением {combinedList.GetMaxPopulation()}");
-            //            var combinedListLinq =
-            //            (from country in listOfCountries
-            //             from another in anotherListOfCountries
-            //             from dict in new[] { country.Union(another) }  // объединяем словари
-            //             from pair in dict  // извлекаем пары ключ-значение (Region, City)
-            //             select pair.Value)  // извлекаем объект City
-            //            .Max(city => city.Population);  // находим максимальную популяцию среди городов
+            //var maxAgeLinq = (from country in listOfCountries
+            //                  from city in country.Values
+            //                  select city.Population).Max();
+            //Console.WriteLine($"Максимальное население через Linq {maxAgeLinq}");
+            //Console.WriteLine("\n\n\n");
 
 
+            //Console.WriteLine("Города с населением больше 5000000");
+            //var moreThanCities = listOfCountries.Where(city => city.Population>5000000);
+            //var moreThanCitiesLinq = from country in listOfCountries
+            //                         from cities in country.Values
+            //                         where cities.Population > 5000000
+            //                         select cities;
+            //Console.WriteLine("Метод расширения");
+            //foreach (var city in moreThanCities)
+            //{
+            //    city.Show();
+            //}
+            //Console.WriteLine("Linq");
+            //foreach (var city in moreThanCitiesLinq)
+            //{
+            //    city.Show();
+            //}
+            //Console.WriteLine("\n\n\n");
 
-            //            Console.WriteLine($"Найдем максимальный город после объединения двух листов Linq {combinedListLinq}");
+            //Console.WriteLine("Запросы на группировку");
+            //var groupedByCountry = listOfCountries.GroupByCondition(city => city.Country);
 
+            //foreach (var country in groupedByCountry)
+            //{
+            //    Console.WriteLine(country.Key);
+            //    foreach (var city in country)
+            //    {
+            //        city.Show();
+            //    }
+            //}
+            //Console.WriteLine("\n\n\n");
+            //var groupOfCountriesLinq = from country in listOfCountries
+            //                           from city in country.Values
+            //                           group city by city.Country;
+            //foreach (var country in groupOfCountriesLinq)
+            //{
+            //    Console.WriteLine(country.Key);
+            //    foreach (var city in country)
+            //    {
+            //        city.Show();
+            //    }
+            //}
+            //Console.WriteLine("\n\n\n");
+            //var combinedList = listOfCountries.Union(anotherListOfCountries).ToList();
+            //Console.WriteLine($"Найдем максимальный город после объединения двух листов расширением {combinedList.AggregatePopulation(population => population.Max())}");
+            //var combinedListLinq =
+            //(from country in listOfCountries
+            // from another in anotherListOfCountries
+            // from dict in new[] { country.Union(another) }  // объединяем словари
+            // from pair in dict  // извлекаем пары ключ-значение (Region, City)
+            // select pair.Value)  // извлекаем объект City
+            //.Max(city => city.Population);  // находим максимальную популяцию среди городов
+
+            //Console.WriteLine($"Найдем максимальный город после объединения двух листов Linq {combinedListLinq}");
 
 
 
 
-            
+
+
             List<City> cities = new List<City>
             {
                 new City("Франция", "Иль-де-Франс", "Париж", 2148327),
@@ -173,32 +172,38 @@ namespace Lab14
                 new City("Китай", "Пекин", "Пекин", 21540000)
             };
 
-            
+
             BinaryTree<City> tree = new BinaryTree<City>();
 
-            
+
             foreach (var city in cities)
             {
                 tree.Add(city);
                 city.Show();
             }
             Console.WriteLine("\n\n\n");
+            Console.WriteLine("Города с населением больше 5000000");
             var filteredCities = tree.Where(city => city.Population > 5000000);
             foreach (var city in filteredCities)
             {
                 city.Show();
             }
             Console.WriteLine("\n\n\n");
-            var totalPopulation = cities.Sum(city => city.Population);
+
+            var totalPopulation = tree.AggregateData(
+            city => city.Population, (total, population) => total + population);
             Console.WriteLine($"Все население городов равно {totalPopulation} ");
+
             Console.WriteLine("\n\n\n");
             var maxPopulationCity = tree.Aggregate((City)null, (max, city) => max == null || city.Population > max.Population ? city : max);
             Console.WriteLine($"Максимальное население города равно {maxPopulationCity}");
             Console.WriteLine("\n\n\n");
-            var sortedCities = tree.OrderByDescending(city => city.Population);
-            foreach(var city in sortedCities)
+
+            Console.WriteLine("Сортировка по населению");
+            var sortedByPopulation = tree.SortBy(city => city.Population);
+            foreach (var city in sortedByPopulation)
             {
-                city.Show();
+                Console.WriteLine(city.Name);
             }
 
         }
