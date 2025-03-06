@@ -31,11 +31,35 @@ namespace Lab14
                 .GroupBy(city => city.Country);
         }
 
-        public static IEnumerable<City> GetCitiesByCondition(this BinaryTree<City> tree, Func<City, bool> condition)
+        public static IEnumerable<T> Where<T>(this BinaryTree<T> collection, Func<T, bool> predicate)
         {
-            
-            return tree
-                .Where(city => condition(city));  
+            foreach (var item in collection)
+            {
+                if (predicate(item))
+                {
+                    yield return item;
+                }
+            }
+        }
+
+        public static TResult Aggregate<T, TResult>(this BinaryTree<T> collection, TResult seed, Func<TResult, T, TResult> func) 
+        {
+            TResult result = seed;
+            foreach (var item in collection)
+            {
+                result = func(result, item);
+            }
+            return result;
+        }
+
+        public static int Sum<T>(this IEnumerable<T> collection, Func<T, int> selector)
+        {
+            int sum = 0;
+            foreach (var item in collection)
+            {
+                sum += selector(item);
+            }
+            return sum;
         }
 
 

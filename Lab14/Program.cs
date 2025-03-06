@@ -183,19 +183,23 @@ namespace Lab14
                 city.Show();
             }
             Console.WriteLine("\n\n\n");
-            var citiesOverFive = tree.GetCitiesByCondition(city => city.Population>5000000);
-            foreach (var city in citiesOverFive)
+            var filteredCities = tree.Where(city => city.Population > 5000000);
+            foreach (var city in filteredCities)
             {
                 city.Show();
             }
-
-
-
-
-
-
-
-
+            Console.WriteLine("\n\n\n");
+            var totalPopulation = cities.Sum(city => city.Population);
+            Console.WriteLine($"Все население городов равно {totalPopulation} ");
+            Console.WriteLine("\n\n\n");
+            var maxPopulationCity = tree.Aggregate((City)null, (max, city) => max == null || city.Population > max.Population ? city : max);
+            Console.WriteLine($"Максимальное население города равно {maxPopulationCity}");
+            Console.WriteLine("\n\n\n");
+            var sortedCities = tree.OrderByDescending(city => city.Population);
+            foreach(var city in sortedCities)
+            {
+                city.Show();
+            }
 
         }
 
