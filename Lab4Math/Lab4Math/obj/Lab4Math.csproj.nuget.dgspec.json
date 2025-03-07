@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C#\\Second_Course\\Lab4Math\\Lab4Math\\Lab4Math.csproj": {}
+    "A:\\C#\\Lab4Math\\Lab4Math\\Lab4Math.csproj": {}
   },
   "projects": {
-    "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
+    "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj",
+        "projectUniqueName": "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj",
         "projectName": "LAB10_lib",
-        "projectPath": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj",
-        "packagesPath": "C:\\Users\\Рустам\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\obj\\",
+        "projectPath": "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj",
+        "packagesPath": "C:\\Users\\redgn\\.nuget\\packages\\",
+        "outputPath": "A:\\C#\\LAB10\\LAB10_lib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Рустам\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\redgn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,21 +60,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\C#\\Second_Course\\Lab4Math\\Lab4Math\\Lab4Math.csproj": {
+    "A:\\C#\\Lab4Math\\Lab4Math\\Lab4Math.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C#\\Second_Course\\Lab4Math\\Lab4Math\\Lab4Math.csproj",
+        "projectUniqueName": "A:\\C#\\Lab4Math\\Lab4Math\\Lab4Math.csproj",
         "projectName": "Lab4Math",
-        "projectPath": "E:\\C#\\Second_Course\\Lab4Math\\Lab4Math\\Lab4Math.csproj",
-        "packagesPath": "C:\\Users\\Рустам\\.nuget\\packages\\",
-        "outputPath": "E:\\C#\\Second_Course\\Lab4Math\\Lab4Math\\obj\\",
+        "projectPath": "A:\\C#\\Lab4Math\\Lab4Math\\Lab4Math.csproj",
+        "packagesPath": "C:\\Users\\redgn\\.nuget\\packages\\",
+        "outputPath": "A:\\C#\\Lab4Math\\Lab4Math\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Рустам\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\redgn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,8 +88,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
-                "projectPath": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\LAB10_lib.csproj"
+              "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj": {
+                "projectPath": "A:\\C#\\LAB10\\LAB10_lib\\LAB10_lib.csproj"
               }
             }
           }
@@ -124,7 +124,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

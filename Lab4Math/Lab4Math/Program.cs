@@ -1,14 +1,14 @@
-﻿using System.Drawing;
-using System.Numerics;
+﻿using LAB10_lib;
+using System;
+using System.Collections.Generic;
 
-using LAB10_lib;
 namespace Lab4Math
-
 {
     internal class Program
     {
         private static Random random = new Random();
         static Dictionary<int, char> dict = new Dictionary<int, char>();
+
         static void FillDict(Dictionary<int, char> dict)
         {
             char[] values = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j' };
@@ -17,6 +17,7 @@ namespace Lab4Math
                 dict[i] = values[i];
             }
         }
+
         static void FillMatrix(int[,] arr)
         {
             for (int i = 0; i < arr.GetLength(0); i++)
@@ -27,9 +28,9 @@ namespace Lab4Math
                 }
             }
         }
+
         static void ShowMatrix(int[,] arr, Dictionary<int, char> dict)
         {
-            
             // Выводим буквы над матрицей
             Console.Write("  ");
             for (int j = 0; j < arr.GetLength(1); j++)
@@ -56,6 +57,7 @@ namespace Lab4Math
             }
             Console.WriteLine("\n");
         }
+
         static int[,] GetMatrix(int[,] matrix)
         {
             int countRow = 1;
@@ -74,6 +76,7 @@ namespace Lab4Math
 
             return matrix;
         }
+
         static int ReadElem()
         {
             int n;
@@ -90,7 +93,8 @@ namespace Lab4Math
             while (!isCorrect);
             return n;
         }
-        static void Dijkstra(int[,] graph, int start)
+
+        static void Dijkstra(int[,] graph, int start, int end)
         {
             int n = graph.GetLength(0);
             int[] dist = new int[n];
@@ -134,11 +138,16 @@ namespace Lab4Math
                 }
             }
 
-            Console.WriteLine("Кратчайшие пути:");
-            for (int i = 0; i < n; i++)
+            
+            if (dist[end] == int.MaxValue)
             {
-                Console.Write($"{dict[start]} -> {dict[i]}: {dist[i]} | Путь: ");
-                PrintPath(prev, i);
+                Console.WriteLine($"Пути от {dict[start]} до {dict[end]} не существует.");
+            }
+            else
+            {
+                Console.WriteLine($"Кратчайший путь от {dict[start]} до {dict[end]}: {dist[end]}");
+                Console.Write("Путь: ");
+                PrintPath(prev, end);
                 Console.WriteLine();
             }
         }
@@ -153,22 +162,38 @@ namespace Lab4Math
             PrintPath(prev, prev[i]);
             Console.Write(" -> " + dict[i]);
         }
+        static int GetVertexIndex(char vertex)
+        {
+            foreach (var pair in dict)
+            {
+                if (pair.Value == vertex)
+                {
+                    return pair.Key;
+                }
+            }
+            return -1; // Вершина не найдена
+        }
+
         static void Prim(int[,] graph)
         {
-            int n = graph.GetLength(0);
-            bool[] selected = new bool[n];
-            int[] minEdge = new int[n];
-            int[] parent = new int[n];
+            int n = graph.GetLength(0); // Количество вершин
+            bool[] selected = new bool[n]; // Выбранные вершины
+            int[] minEdge = new int[n]; // Минимальные веса рёбер
+            int[] parent = new int[n]; // Родительские вершины
 
+            
             for (int i = 0; i < n; i++)
             {
                 minEdge[i] = int.MaxValue;
                 parent[i] = -1;
             }
+
+           
             minEdge[0] = 0;
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < n - 1; i++)
             {
+                
                 int minIndex = -1;
                 for (int j = 0; j < n; j++)
                 {
@@ -178,8 +203,10 @@ namespace Lab4Math
                     }
                 }
 
+                
                 selected[minIndex] = true;
 
+                
                 for (int j = 0; j < n; j++)
                 {
                     if (graph[minIndex, j] > 0 && !selected[j] && graph[minIndex, j] < minEdge[j])
@@ -189,12 +216,75 @@ namespace Lab4Math
                     }
                 }
             }
-
+            int weight = 0;
+            // Выводим результат
             Console.WriteLine("Минимальное остовное дерево:");
             for (int i = 1; i < n; i++)
             {
                 Console.WriteLine($"{dict[parent[i]]} - {dict[i]} : {graph[i, parent[i]]}");
+                weight += graph[i, parent[i]];
             }
+        }
+
+        static void BronKerbosch(int[,] graph, List<int> R, List<int> P, List<int> X)
+        {
+            if (P.Count == 0 && X.Count == 0)
+            {
+                // Найдена максимальная клика
+                Console.Write("Клика: ");
+                foreach (var vertex in R)
+                {
+                    Console.Write(dict[vertex] + " ");
+                }
+                Console.WriteLine();
+                return;
+            }
+
+            foreach (var v in new List<int>(P))
+            {
+                List<int> newR = new List<int>(R) { v };
+                List<int> newP = new List<int>();
+                List<int> newX = new List<int>();
+
+                
+                foreach (var neighbor in P)
+                {
+                    if (graph[v, neighbor] > 0)
+                    {
+                        newP.Add(neighbor);
+                    }
+                }
+                foreach (var neighbor in X)
+                {
+                    if (graph[v, neighbor] > 0)
+                    {
+                        newX.Add(neighbor);
+                    }
+                }
+
+                
+                BronKerbosch(graph, newR, newP, newX);
+
+                // Перемещаем вершину v из P в X
+                P.Remove(v);
+                X.Add(v);
+            }
+        }
+
+        static void FindCliques(int[,] graph)
+        {
+            int n = graph.GetLength(0);
+            List<int> R = new List<int>(); // Текущая клика
+            List<int> P = new List<int>(); // Кандидаты
+            List<int> X = new List<int>(); // Уже рассмотренные вершины
+
+            // Инициализация P (все вершины графа)
+            for (int i = 0; i < n; i++)
+            {
+                P.Add(i);
+            }
+
+            BronKerbosch(graph, R, P, X);
         }
         public static void Main(string[] args)
         {
@@ -205,25 +295,67 @@ namespace Lab4Math
             matrix = GetMatrix(matrix);
             ShowMatrix(matrix, dict);
 
-            Console.Write("Введите начальную вершину (буквой): ");
-            char startVertex = Console.ReadLine()[0];
-            int startIndex = -1;
-            foreach (var pair in dict)
-            {
-                if (pair.Value == startVertex)
-                {
-                    startIndex = pair.Key;
-                    break;
+
+            bool isFinal = false;
+            int choice = 0;
+            while (!isFinal) {
+                Console.WriteLine("1 - Дейкстра, 2 - Прим, 3 - Клика");
+                choice = Interface.ReadElem();
+                switch (choice) {
+                    case 1:
+                        Console.Write("Введите начальную вершину (буквой): ");
+                        char startVertex = Console.ReadLine()[0];
+                        Console.Write("Введите конечную вершину (буквой): ");
+                        char endVertex = Console.ReadLine()[0];
+
+                        // Преобразуем вершины в индексы
+                        int startIndex = GetVertexIndex(startVertex);
+                        int endIndex = GetVertexIndex(endVertex);
+
+                        // Проверяем, что вершины существуют
+                        if (startIndex == -1 || endIndex == -1)
+                        {
+                            Console.WriteLine("Ошибка: одна из вершин не найдена.");
+                            return;
+                        }
+
+                        Dijkstra(matrix, startIndex, endIndex);
+                        break;
+                    case 2:
+                        Prim(matrix);
+                        break;
+                    case 3:
+                        FindCliques(matrix);
+                        break;
+                    case 4:
+                        isFinal = true;
+                        break;
+
+                    default:
+                        Console.WriteLine("Ошибка");
+                        break;
+
                 }
             }
+            //Console.Write("Введите начальную вершину (буквой): ");
+            //char startVertex = Console.ReadLine()[0];
+            //Console.Write("Введите конечную вершину (буквой): ");
+            //char endVertex = Console.ReadLine()[0];
 
-            if (startIndex == -1)
-            {
-                Console.WriteLine("Ошибка: такой вершины нет.");
-                return;
-            }
+            //// Преобразуем вершины в индексы
+            //int startIndex = GetVertexIndex(startVertex);
+            //int endIndex = GetVertexIndex(endVertex);
 
-            Dijkstra(matrix, startIndex);
+            //// Проверяем, что вершины существуют
+            //if (startIndex == -1 || endIndex == -1)
+            //{
+            //    Console.WriteLine("Ошибка: одна из вершин не найдена.");
+            //    return;
+            //}
+
+            //Dijkstra(matrix, startIndex, endIndex);
+            Prim(matrix);
+            
         }
     }
 }
