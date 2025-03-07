@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RunSettings>
   <RunConfiguration>
-    <ResultsDirectory>E:\C#\Second_Course\TestLab14\bin\Debug\net8.0\fine-code-coverage\coverage-tool-output</ResultsDirectory>
-    <TestAdaptersPaths>C:\Users\Рустам\AppData\Local\FineCodeCoverage\msCodeCoverage\17.9.0\build\netstandard2.0</TestAdaptersPaths>
+    <ResultsDirectory>A:\C#\TestLab14\bin\Debug\net8.0\fine-code-coverage\coverage-tool-output</ResultsDirectory>
+    <TestAdaptersPaths>C:\Users\redgn\AppData\Local\FineCodeCoverage\msCodeCoverage\17.9.0\build\netstandard2.0</TestAdaptersPaths>
     <CollectSourceInformation>False</CollectSourceInformation>
   </RunConfiguration>
   <DataCollectionRunSettings>
@@ -13,7 +13,10 @@
             <ModulePaths>
               <Exclude></Exclude>
               <Include>
-                <ModulePath>E:\\C#\\Second_Course\\TestLab14\\bin\\Debug\\net8.0\\TestLab14.dll</ModulePath>
+                <ModulePath>.*\\Lab12\.(dll|exe)$</ModulePath>
+                <ModulePath>.*\\Lab14\.(dll|exe)$</ModulePath>
+                <ModulePath>.*\\LAB10_lib\.dll$</ModulePath>
+                <ModulePath>A:\\C#\\TestLab14\\bin\\Debug\\net8.0\\TestLab14.dll</ModulePath>
               </Include>
             </ModulePaths>
             <Functions>
