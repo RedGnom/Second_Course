@@ -1,0 +1,17 @@
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\Lab15_ver2.Form1.resources
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\Lab15_ver2.csproj.GenerateResource.cache
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\Lab15_ver2.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\Lab15_ver2.AssemblyInfoInputs.cache
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\Lab15_ver2.AssemblyInfo.cs
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\Lab15_ver2.csproj.CoreCompileInputs.cache
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\Lab15_ver2.sourcelink.json
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\bin\Debug\net8.0-windows\Lab15_ver2.exe
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\bin\Debug\net8.0-windows\Lab15_ver2.deps.json
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\bin\Debug\net8.0-windows\Lab15_ver2.runtimeconfig.json
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\bin\Debug\net8.0-windows\Lab15_ver2.dll
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\bin\Debug\net8.0-windows\Lab15_ver2.pdb
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\Lab15_ver2.dll
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\refint\Lab15_ver2.dll
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\Lab15_ver2.pdb
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\Lab15_ver2.genruntimeconfig.cache
+E:\C#\Second_Course\Lab15_ver2\Lab15_ver2\obj\Debug\net8.0-windows\ref\Lab15_ver2.dll
