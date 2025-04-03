@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPlace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Place xsi:type="City">
+    <Country>Бразилия</Country>
+    <Name>Нижегородская область</Name>
+    <Cities />
+    <Population>5223720</Population>
+    <CityName>Ярославль</CityName>
+  </Place>
+  <Place xsi:type="City">
+    <Country>Япония</Country>
+    <Name>Хабаровский край</Name>
+    <Cities />
+    <Population>4987016</Population>
+    <CityName>Ульяновск</CityName>
+  </Place>
+</ArrayOfPlace>

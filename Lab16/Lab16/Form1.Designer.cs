@@ -34,6 +34,9 @@
             inputCount = new TextBox();
             generateCollection = new Button();
             showCollection = new Button();
+            selectFormat = new ComboBox();
+            saveButton = new Button();
+            loadButton = new Button();
             SuspendLayout();
             // 
             // output
@@ -84,11 +87,42 @@
             showCollection.UseVisualStyleBackColor = true;
             showCollection.Click += showCollection_Click;
             // 
+            // selectFormat
+            // 
+            selectFormat.FormattingEnabled = true;
+            selectFormat.Location = new Point(222, 61);
+            selectFormat.Name = "selectFormat";
+            selectFormat.Size = new Size(93, 23);
+            selectFormat.TabIndex = 6;
+            // 
+            // saveButton
+            // 
+            saveButton.Location = new Point(758, 12);
+            saveButton.Name = "saveButton";
+            saveButton.Size = new Size(78, 44);
+            saveButton.TabIndex = 7;
+            saveButton.Text = "Сохранить";
+            saveButton.UseVisualStyleBackColor = true;
+            saveButton.Click += saveButton_Click;
+            // 
+            // loadButton
+            // 
+            loadButton.Location = new Point(849, 14);
+            loadButton.Name = "loadButton";
+            loadButton.Size = new Size(79, 42);
+            loadButton.TabIndex = 8;
+            loadButton.Text = "Загрузить";
+            loadButton.UseVisualStyleBackColor = true;
+            loadButton.Click += loadButton_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1213, 533);
+            Controls.Add(loadButton);
+            Controls.Add(saveButton);
+            Controls.Add(selectFormat);
             Controls.Add(showCollection);
             Controls.Add(generateCollection);
             Controls.Add(inputCount);
@@ -107,5 +141,8 @@
         private TextBox inputCount;
         private Button generateCollection;
         private Button showCollection;
+        private ComboBox selectFormat;
+        private Button saveButton;
+        private Button loadButton;
     }
 }

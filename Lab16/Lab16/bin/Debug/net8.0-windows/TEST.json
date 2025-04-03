@@ -1,0 +1,32 @@
+[
+  {
+    "$type": "city",
+    "Population": 5608526,
+    "BaseRegion": {
+      "TotalPopulation": 0,
+      "Cities": [],
+      "Country": "\u0424\u0438\u043B\u0438\u043F\u043F\u0438\u043D\u044B",
+      "Name": "\u0412\u043E\u043B\u043E\u0433\u043E\u0434\u0441\u043A\u0430\u044F \u043E\u0431\u043B\u0430\u0441\u0442\u044C"
+    },
+    "CityName": "\u042F\u0440\u043E\u0441\u043B\u0430\u0432\u043B\u044C",
+    "TotalPopulation": 0,
+    "Cities": [],
+    "Country": "\u0424\u0438\u043B\u0438\u043F\u043F\u0438\u043D\u044B",
+    "Name": "\u0412\u043E\u043B\u043E\u0433\u043E\u0434\u0441\u043A\u0430\u044F \u043E\u0431\u043B\u0430\u0441\u0442\u044C"
+  },
+  {
+    "$type": "city",
+    "Population": 3707849,
+    "BaseRegion": {
+      "TotalPopulation": 0,
+      "Cities": [],
+      "Country": "\u0422\u0443\u0440\u0446\u0438\u044F",
+      "Name": "\u0411\u0440\u044F\u043D\u0441\u043A\u0430\u044F \u043E\u0431\u043B\u0430\u0441\u0442\u044C"
+    },
+    "CityName": "\u041C\u043E\u0441\u043A\u0432\u0430",
+    "TotalPopulation": 0,
+    "Cities": [],
+    "Country": "\u0422\u0443\u0440\u0446\u0438\u044F",
+    "Name": "\u0411\u0440\u044F\u043D\u0441\u043A\u0430\u044F \u043E\u0431\u043B\u0430\u0441\u0442\u044C"
+  }
+]

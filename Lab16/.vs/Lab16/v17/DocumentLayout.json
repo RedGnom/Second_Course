@@ -3,27 +3,28 @@
   "WorkspaceRootPath": "E:\\C#\\Second_Course\\Lab16\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|e:\\c#\\second_course\\lab16\\lab16\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|solutionrelative:lab16\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{502253FC-CCEE-412C-A543-B46A9437E8F2}|..\\LAB10\\LAB10_lib\\LAB10_lib.csproj|e:\\c#\\second_course\\lab10\\lab10_lib\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|e:\\c#\\second_course\\lab16\\lab16\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|solutionrelative:lab16\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{502253FC-CCEE-412C-A543-B46A9437E8F2}|..\\LAB10\\LAB10_lib\\LAB10_lib.csproj|e:\\c#\\second_course\\lab10\\lab10_lib\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{502253FC-CCEE-412C-A543-B46A9437E8F2}|..\\LAB10\\LAB10_lib\\LAB10_lib.csproj|e:\\c#\\second_course\\lab10\\lab10_lib\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|e:\\c#\\second_course\\lab16\\lab16\\treemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|solutionrelative:lab16\\treemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|e:\\c#\\second_course\\lab16\\lab16\\logs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|solutionrelative:lab16\\logs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|e:\\c#\\second_course\\lab16\\lab16\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|solutionrelative:lab16\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE5165FC-DC13-4B0C-A817-A847CDC8C213}|..\\Lab13\\Lab13.csproj|e:\\c#\\second_course\\lab13\\treeevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C65CE1EC-B6EE-4C71-B2B8-712759D846FD}|..\\Lab12\\Lab12\\Lab12.csproj|e:\\c#\\second_course\\lab12\\lab12\\binarytree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|e:\\c#\\second_course\\lab16\\lab16\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|solutionrelative:lab16\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|E:\\C#\\Second_Course\\Lab16\\lab16\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{424D1EC2-A27E-4DB8-8BF0-E43AC4720725}|Lab16\\Lab16.csproj|solutionrelative:lab16\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,26 +58,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "E:\\C#\\Second_Course\\Lab16\\Lab16\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "Lab16\\Form1.Designer.cs",
-              "ToolTip": "E:\\C#\\Second_Course\\Lab16\\Lab16\\Form1.Designer.cs",
-              "RelativeToolTip": "Lab16\\Form1.Designer.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAkwC8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Region.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Region.cs",
+              "RelativeDocumentMoniker": "..\\LAB10\\LAB10_lib\\Region.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Region.cs",
+              "RelativeToolTip": "..\\LAB10\\LAB10_lib\\Region.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T17:52:40.447Z",
+              "WhenOpened": "2025-04-03T18:41:50.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "City.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\City.cs",
+              "RelativeDocumentMoniker": "..\\LAB10\\LAB10_lib\\City.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\City.cs",
+              "RelativeToolTip": "..\\LAB10\\LAB10_lib\\City.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T18:41:14.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Place.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Place.cs",
+              "RelativeDocumentMoniker": "..\\LAB10\\LAB10_lib\\Place.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\LAB10\\LAB10_lib\\Place.cs",
+              "RelativeToolTip": "..\\LAB10\\LAB10_lib\\Place.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAUwBQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T18:33:52.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BinaryTree.cs",
+              "DocumentMoniker": "E:\\C#\\Second_Course\\Lab12\\Lab12\\BinaryTree.cs",
+              "RelativeDocumentMoniker": "..\\Lab12\\Lab12\\BinaryTree.cs",
+              "ToolTip": "E:\\C#\\Second_Course\\Lab12\\Lab12\\BinaryTree.cs",
+              "RelativeToolTip": "..\\Lab12\\Lab12\\BinaryTree.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T16:16:08.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs",
               "DocumentMoniker": "E:\\C#\\Second_Course\\Lab16\\Lab16\\Form1.cs",
               "RelativeDocumentMoniker": "Lab16\\Form1.cs",
               "ToolTip": "E:\\C#\\Second_Course\\Lab16\\Lab16\\Form1.cs",
               "RelativeToolTip": "Lab16\\Form1.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAYwCYAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAmwI8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T17:38:34.952Z",
               "EditorCaption": ""
@@ -84,45 +124,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Logs.cs",
-              "DocumentMoniker": "E:\\C#\\Second_Course\\Lab16\\Lab16\\Logs.cs",
-              "RelativeDocumentMoniker": "Lab16\\Logs.cs",
-              "ToolTip": "E:\\C#\\Second_Course\\Lab16\\Lab16\\Logs.cs",
-              "RelativeToolTip": "Lab16\\Logs.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAqwCMAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T16:43:27.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "TreeManager.cs",
               "DocumentMoniker": "E:\\C#\\Second_Course\\Lab16\\Lab16\\TreeManager.cs",
               "RelativeDocumentMoniker": "Lab16\\TreeManager.cs",
               "ToolTip": "E:\\C#\\Second_Course\\Lab16\\Lab16\\TreeManager.cs",
               "RelativeToolTip": "Lab16\\TreeManager.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAowBgAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAmwIMAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T16:42:48.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TreeEvent.cs",
-              "DocumentMoniker": "E:\\C#\\Second_Course\\Lab13\\TreeEvent.cs",
-              "RelativeDocumentMoniker": "..\\Lab13\\TreeEvent.cs",
-              "ToolTip": "E:\\C#\\Second_Course\\Lab13\\TreeEvent.cs",
-              "RelativeToolTip": "..\\Lab13\\TreeEvent.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T16:22:19.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "E:\\C#\\Second_Course\\Lab16\\Lab16\\Form1.cs",
               "RelativeDocumentMoniker": "Lab16\\Form1.cs",
