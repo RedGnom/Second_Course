@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab12
 {
+    [Serializable]
     public class Node<T>
     {
         T value;

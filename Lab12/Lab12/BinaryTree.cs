@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Lab12
 {
+    [Serializable]
     public class BinaryTree<T> : ICollection<T>, IEnumerable<T>, ICloneable
     {
         private Node<T> root;

@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Lab13
 {
+    [Serializable]
     public class TreeEventHandlerArgs : EventArgs
     {
         public string CollectionName { get; set; }
@@ -28,6 +29,7 @@ namespace Lab13
     }
 
     public delegate void TreeEventHandler(object treeName, TreeEventHandlerArgs args);
+    [Serializable]
     public class TreeEvent<T>: BinaryTree<T>
     {
         public string Name { get; set; } = "";
