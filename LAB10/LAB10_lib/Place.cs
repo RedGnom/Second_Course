@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text.Json.Serialization;
+using System.Xml.Serialization;
 
 namespace LAB10_lib
 {
@@ -8,10 +10,16 @@ namespace LAB10_lib
         void RandomInit();
         //void Show();
     }
+    [JsonDerivedType(typeof(Place), typeDiscriminator: "place")]
+    [JsonDerivedType(typeof(City), typeDiscriminator: "city")]
+    [XmlInclude(typeof(City))]
+    [Serializable]
+    
     public class Place: IInit, IComparable<Place>, ICloneable
     {
         private string country = string.Empty;
         private string name = string.Empty;
+        [NonSerialized]
         protected Random rnd = new Random();
         public string Country
         {

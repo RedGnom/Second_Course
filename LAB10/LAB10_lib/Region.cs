@@ -7,8 +7,8 @@ using System.Xml.Linq;
 
 namespace LAB10_lib
 {
-    
 
+    [Serializable]
     public class Region: Place
     {
         private List<City> cities = new List<City>();

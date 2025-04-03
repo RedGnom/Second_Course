@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LAB10_lib
 {
+    [Serializable]
     public class Address: City
     {
         private int house;
